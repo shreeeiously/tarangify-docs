@@ -1,0 +1,9 @@
+{
+  "label": "ESP32 Basic Tutorials",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Tarangify ESP32 Getting Started Tutorials",
+    "description": "The Tarangify ESP32 Learning Hub is your gateway to the world of IoT, embedded systems, and intelligent connected devices. Whether you're taking your first steps with microcontrollers or building advanced real-world solutions, our comprehensive tutorials, practical examples, and hands-on guides will help you master the ESP32 ecosystem with confidence. Explore everything from hardware fundamentals and wireless communication to cloud connectivity, automation, and AI-powered applications—all in one place."
+  }
+}
