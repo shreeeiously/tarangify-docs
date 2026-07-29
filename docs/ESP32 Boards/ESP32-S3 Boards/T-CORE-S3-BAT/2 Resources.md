@@ -8,19 +8,16 @@ sidebar_position: 2
 
 ### Development Board Design File
 
-- Schematic
-- Structure and Dimensions
-
+- [Structure and Dimensions](https://store.thingslinker.com/product/tarangify-t-core-s3-24v-esp32-s3-development-board-5v-to-28v-wide-input-sd-card-rgb-led/)
 ---
 
 ## 2. Technical Manuals
 
 ### Official Documentation
 
-- ESP32-S3 Datasheet
-- ESP32-S3 Technical Reference Manual
-- ESP32-S3-WROOM-1 Datasheet
-
+- [ESP32-S3 Datasheet](https://documentation.espressif.com/esp32-s3_datasheet_en.pdf)
+- [ESP32-S3 Technical Reference Manual](https://documentation.espressif.com/esp32-s3_technical_reference_manual_en.pdf)
+- [ESP32-S3-WROOM-1 Datasheet](https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
 ---
 
 ## 3. Examples
