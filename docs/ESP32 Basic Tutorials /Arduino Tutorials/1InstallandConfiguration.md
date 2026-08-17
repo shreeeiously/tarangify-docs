@@ -23,9 +23,13 @@ Before starting, ensure you have:
 3. Run the installer and follow the installation wizard.
 4. Launch Arduino IDE after installation.
 
+![Arduino IDE](/img/A1.jpg)
+
 ## Step 2: Add ESP32 Board Support
 
 Open **File → Preferences**.
+
+![Arduino IDE](/img/A2.jpg)
 
 In **Additional Boards Manager URLs**, add:
 
@@ -41,6 +45,8 @@ Click **OK**.
 2. Search for **ESP32**.
 3. Install **ESP32 by Espressif Systems**.
 4. Wait for the installation to complete.
+
+![Arduino IDE](/img/A3.jpg)
 
 ## Step 4: Connect Your Board
 
@@ -60,6 +66,8 @@ Examples:
 
 - ESP32 Dev Module
 - ESP32-S3 Dev Module
+
+![Arduino IDE](/img/A4.jpg)
 
 ## Step 6: Upload Your First Program
 

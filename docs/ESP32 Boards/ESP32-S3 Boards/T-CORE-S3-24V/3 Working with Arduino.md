@@ -57,6 +57,8 @@ See [Section 1: Installing and Configuring Arduino IDE](/tarangify-docs/docs/ESP
 2. Search for and select **ESP32S3 Dev Module** — T-CORE-S3-24V doesn't currently have a dedicated entry in the boards list, so this generic profile is the correct starting point.
 3. Select the COM port that appears once the board is connected over Type-C USB.
 
+![T-CORE-S3-24V Board](/img/24A1.jpg)
+
 ### 2.3 Entering Download Mode (if needed)
 
 If the board doesn't flash automatically, hold **Boot**, tap **Reset**, then release **Boot** to force it into download mode before uploading.

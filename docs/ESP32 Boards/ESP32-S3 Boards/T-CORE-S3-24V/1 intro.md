@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Tarangify T-CORE-S3-24V
 
-The **Tarangify T-CORE-S3-24V** is a high-performance ESP32-S3 development board designed for industrial automation, IoT, robotics, smart agriculture, and embedded applications that require reliable operation from a wide range of power sources.
+The [Tarangify T-CORE-S3-24V](https://store.thingslinker.com/product/tarangify-t-core-s3-24v-esp32-s3-development-board-5v-to-28v-wide-input-sd-card-rgb-led/) is a high-performance ESP32-S3 development board designed for industrial automation, IoT, robotics, smart agriculture, and embedded applications that require reliable operation from a wide range of power sources.
 
 Powered by the **ESP32-S3-N16R8** module, the board combines powerful processing capabilities, wireless connectivity, onboard storage, and industrial-grade power management into a compact and deployment-ready platform.
 

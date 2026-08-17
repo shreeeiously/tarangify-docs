@@ -7,7 +7,7 @@ sidebar_position: 1
 
 # Tarangify CoreX-S3 GSM
 
-The **Tarangify CoreX-S3 GSM** is a powerful IoT and embedded development board based on the **ESP32-S3-N16R8** microcontroller and the **SIMCom A7672X 4G LTE Cat-1 module**.
+The [Tarangify CoreX-S3 GSM](https://store.thingslinker.com/product/tarangify-corex-s3-gsm-esp32-s3-simcom-a7672x-4g-lte-development-board/) is a powerful IoT and embedded development board based on the **ESP32-S3-N16R8** microcontroller and the **SIMCom A7672X 4G LTE Cat-1 module**.
 
 It combines Wi-Fi, Bluetooth Low Energy, 4G LTE cellular connectivity, GNSS positioning, audio support, battery operation, and extensive GPIO expansion in a compact development platform.
 

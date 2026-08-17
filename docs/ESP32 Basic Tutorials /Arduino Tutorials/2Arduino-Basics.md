@@ -106,13 +106,40 @@ Serial.println("Hello Tarangify!");
 1. Connect the ESP32 board.
 2. Open Arduino IDE.
 3. Select the correct board.
+
+![Arduino IDE](/img/2A1.jpg)
+
 4. Select the COM Port.
+
+![Arduino IDE](/img/2A2.jpg)
+
 5. Click **Upload**.
+
+![Arduino IDE](/img/2A3.jpg)
+
+### Enable USB CDC On Boot (Optional)
+
+In the Tools menu, check the USB CDC On Boot option.
+
+:::info
+Some ESP32 boards (e.g., the ESP32-S3 series) feature a native USB interface on the chip itself, which can be used for firmware uploading or serial communication without requiring a separate USB-to-serial chip (like CH340, CP2102).
+
+For such boards, you need to enable the USB CDC On Boot feature in the Arduino IDE. [More Info](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/cdc_dfu_flash.html#usb-cdc)
+
+For example, the Waveshare ESP32-S3-Zero development board relies on the USB CDC On Boot feature. This option is usually enabled by default. Please check and confirm that the "USB CDC On Boot" option is set to "Enabled" in the Arduino IDE's "Tools" menu.
+:::
+
+![Arduino IDE](/img/2A4.jpg)
 
 After uploading:
 
 1. Open **Serial Monitor**.
+
+![Arduino IDE](/img/2A5.jpg)
+
 2. Set baud rate to **115200**.
+
+![Arduino IDE](/img/2A6.jpg)
 
 Output:
 
