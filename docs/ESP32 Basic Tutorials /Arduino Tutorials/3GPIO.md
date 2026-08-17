@@ -4,7 +4,7 @@ title: Digital Input and Output
 description: Learn how to control LEDs and read buttons using ESP32 GPIO pins.
 ---
 
-# Digital Input and Output
+# Section 3: Digital Input and Output
 
 GPIO (General Purpose Input Output) pins are the most commonly used pins on an ESP32. They allow the microcontroller to interact with external devices such as LEDs, buttons, relays, sensors, and displays.
 

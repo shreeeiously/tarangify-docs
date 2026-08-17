@@ -12,7 +12,7 @@ This section covers the four fundamental Wi-Fi operations you'll use on ESP32 wi
 
 :::info
 
-Make sure you've completed [**Section 1: Set Up Development Environment**](./getting-started) through [**Section 8: SPI Communication**](./spi-communication) before starting this section.
+Make sure you've completed [**Section 1: Set Up Development Environment**](./micropython-getting-started) through [**Section 8: SPI Communication**](./spi-communication) before starting this section.
 
 :::
 

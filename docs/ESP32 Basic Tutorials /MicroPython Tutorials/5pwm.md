@@ -12,7 +12,7 @@ This section covers what PWM is and how ESP32 generates it, then puts it to work
 
 :::info
 
-Make sure you've completed [**Section 1: Set Up Development Environment**](./getting-started) through [**Section 4: ADC Analog Input**](./analog-input) before starting this section.
+Make sure you've completed [**Section 1: Set Up Development Environment**](./micropython-getting-started) through [**Section 4: ADC Analog Input**](./analog-input) before starting this section.
 
 :::
 

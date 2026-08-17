@@ -4,7 +4,7 @@ title: Arduino Basics
 description: Learn the fundamentals of Arduino programming for ESP32 development.
 ---
 
-# Arduino Basics
+# Section 2: Arduino Basics
 
 In this tutorial, you will learn the basic structure of an Arduino program and upload your first sketch to an ESP32 board.
 

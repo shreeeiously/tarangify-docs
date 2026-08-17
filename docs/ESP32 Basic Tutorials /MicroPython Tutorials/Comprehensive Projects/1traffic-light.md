@@ -28,7 +28,7 @@ You'll need:
 - Jumper wires
 - An ESP32-series board
 
-Wire each LED (through its own resistor) to its own GPIO pin, with all three cathodes tied to GND — same basic wiring as the [single-LED example](./digital-io#21-wire-it-up), just repeated three times. This example uses GPIO7 (red), GPIO8 (yellow), and GPIO9 (green).
+Wire each LED (through its own resistor) to its own GPIO pin, with all three cathodes tied to GND — same basic wiring as the [single-LED example](../digital-io#21-wire-it-up), just repeated three times. This example uses GPIO7 (red), GPIO8 (yellow), and GPIO9 (green).
 
 ## Code
 
@@ -115,12 +115,5 @@ finally:
 
 ## Reference Links
 
-* [Section 3: GPIO Digital Output/Input](./3digital-io)
+* [Section 3: GPIO Digital Output/Input](../digital-io)
 
----
-
-## Next Step
-
-Continue to:
-
-[**SOS Signal →**](./2sos)

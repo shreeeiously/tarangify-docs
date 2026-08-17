@@ -4,7 +4,7 @@ title: PWM (Pulse Width Modulation)
 description: Learn how to generate PWM signals with the ESP32 to control LED brightness, motor speed, and more.
 ---
 
-# PWM (Pulse Width Modulation)
+# Section 5: PWM (Pulse Width Modulation)
 
 PWM (Pulse Width Modulation) is a technique used to simulate analog output using digital signals. It allows the ESP32 to control the brightness of LEDs, the speed of motors, the position of servos, and many other devices. :contentReference[oaicite:0]{index=0}
 

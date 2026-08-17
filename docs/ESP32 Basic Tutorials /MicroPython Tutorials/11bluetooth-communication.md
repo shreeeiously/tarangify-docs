@@ -23,7 +23,7 @@ This section focuses entirely on BLE, and walks through three examples: a periph
 
 :::info
 
-Make sure you've completed [**Section 1: Set Up Development Environment**](./getting-started) through [**Section 10: Web Server**](./web-server) before starting this section.
+Make sure you've completed [**Section 1: Set Up Development Environment**](./micropython-getting-started) through [**Section 10: Web Server**](./web-server) before starting this section.
 
 :::
 

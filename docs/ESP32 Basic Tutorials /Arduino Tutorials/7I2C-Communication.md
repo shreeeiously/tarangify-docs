@@ -4,7 +4,7 @@ title: I2C Communication
 description: Learn how to use I2C communication on ESP32 to connect sensors, displays, and other peripherals.
 ---
 
-# I2C Communication
+# Section 7: I2C Communication
 
 I2C (Inter-Integrated Circuit), sometimes written as I²C or IIC, is a popular communication protocol used to connect multiple devices using only two signal wires. It is commonly used for sensors, OLED displays, RTC modules, EEPROMs, and many other peripherals. :contentReference[oaicite:0]{index=0}
 

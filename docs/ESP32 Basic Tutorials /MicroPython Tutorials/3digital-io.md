@@ -1,7 +1,7 @@
 ---
 id: digital-io
 title: GPIO Digital Output/Input
-sidebar_label: PIO Digital Output/Input
+sidebar_label: GPIO Digital Output/Input
 sidebar_position: 4
 description: Learn digital signal basics and control GPIO output and input in MicroPython by blinking an LED and reading a button.
 ---
@@ -12,7 +12,7 @@ This section covers digital signals conceptually, then puts them into practice w
 
 :::info
 
-Make sure you've completed [**Section 1: Set Up Development Environment**](./getting-started) and [**Section 2: Basics**](./basic) before starting this section.
+Make sure you've completed [**Section 1: Set Up Development Environment**](./micropython-getting-started) and [**Section 2: Basics**](./basic) before starting this section.
 
 :::
 

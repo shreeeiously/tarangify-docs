@@ -45,11 +45,11 @@ Many SSD1327-based displays also support I2C mode via a BS1/BS2 jumper setting. 
 
 :::
 
-Wire the potentiometer as in [Section 4](./4analog-input#3-wire-up-a-potentiometer) — this example uses GPIO7.
+Wire the potentiometer as in [Section 4](../analog-input#3-wire-up-a-potentiometer) — this example uses GPIO7.
 
 ## Upload the Driver
 
-Same driver as [Section 7](./7i2c-communication#41-upload-the-driver) — the [`micropython-ssd1327`](https://github.com/mcauser/micropython-ssd1327) library. Upload `ssd1327.py` to your board's root directory if you haven't already.
+Same driver as [Section 7](../i2c-communication#41-upload-the-driver) — the [`micropython-ssd1327`](https://github.com/mcauser/micropython-ssd1327) library. Upload `ssd1327.py` to your board's root directory if you haven't already.
 
 ## Code
 
@@ -175,14 +175,6 @@ while True:
 
 ## Reference Links
 
-* [Section 4: ADC Analog Input](./4analog-input)
-* [Section 8: SPI Communication](./8spi-communication)
+* [Section 4: ADC Analog Input](../analog-input)
+* [Section 8: SPI Communication](../spi-communication)
 * [micropython-ssd1327 driver library](https://github.com/mcauser/micropython-ssd1327)
-
----
-
-## Next Step
-
-Continue to:
-
-[**Internet Weather Display →**](./6weather-display)

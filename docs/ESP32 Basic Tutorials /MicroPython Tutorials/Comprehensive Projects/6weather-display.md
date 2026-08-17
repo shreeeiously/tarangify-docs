@@ -1384,10 +1384,10 @@ Weather
 
 Before continuing with more advanced IoT projects, it is recommended to understand:
 
-- [SPI Communication](../8spi-communication)
-- [Wi-Fi Networking Basics](../9wifi-networking-basics)
-- [Web Server](../10web-server)
-- [ADC Analog Input](4analog-input)
+- [SPI Communication](../spi-communication)
+- [Wi-Fi Networking Basics](../wifi-networking-basic)
+- [Web Server](../web-server)
+- [ADC Analog Input](../analog-input)
 
 ---
 
@@ -1397,4 +1397,4 @@ You have now built an Internet-connected ESP32 weather display using MicroPython
 
 Try modifying the project to display additional information or interact with other peripherals on your Tarangify development board.
 
-[**← Back to Comprehensive Projects**](./0fun-project)
+[**← Back to Comprehensive Projects**](./fun-project)

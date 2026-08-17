@@ -12,7 +12,7 @@ This section builds your day-to-day fluency with the Thonny IDE and MicroPython 
 
 :::info
 
-Make sure you've completed [**Section 1: Set Up Development Environment**](./getting-started) before starting this section.
+Make sure you've completed [**Section 1: Set Up Development Environment**](./micropython-getting-started) before starting this section.
 
 :::
 

@@ -170,14 +170,14 @@ void loop() {
 
 ### 3.4 Wi-Fi and Bluetooth
 
-Wi-Fi (802.11 b/g/n) and Bluetooth 5.0 (BLE) are built into the ESP32-S3-WROOM-1 module itself, so they work the same way as on any ESP32-S3 board — no board-specific wiring or pin assignment needed. See [Section 9: Wi-Fi Basics](/tarangify-docs/docs/ESP32%20Basic%20Tutorials%20/Arduino%20Tutorials/9WiFi-Networking-Basic), [Section 10: Web Server](/tarangify-docs/docs/ESP32%20Basic%20Tutorials%20/Arduino%20Tutorials/10Web-Server), and [Section 11: Bluetooth](/tarangify-docs/docs/ESP32%20Basic%20Tutorials%20/Arduino%20Tutorials/11Bluetooth) in the general tutorial series for detailed walkthroughs and example code.
+Wi-Fi (802.11 b/g/n) and Bluetooth 5.0 (BLE) are built into the ESP32-S3-WROOM-1 module itself, so they work the same way as on any ESP32-S3 board — no board-specific wiring or pin assignment needed. See [Section 9: Wi-Fi Basics](/tarangify-docs/docs/ESP32%20Basic%20Tutorials%20/Arduino%20Tutorials/9Wi-Fi-Networking-Basics), [Section 10: Web Server](/tarangify-docs/docs/ESP32%20Basic%20Tutorials%20/Arduino%20Tutorials/10Web-Server), and [Section 11: Bluetooth](/tarangify-docs/docs/ESP32%20Basic%20Tutorials%20/Arduino%20Tutorials/11Bluetooth) in the general tutorial series for detailed walkthroughs and example code.
 
 ---
 
 ## 4. Reference Links
 
 * [Section 1: Installing and Configuring Arduino IDE](/tarangify-docs/docs/ESP32%20Basic%20Tutorials%20/Arduino%20Tutorials/1InstallandConfiguration)
-* [Section 9: Wi-Fi Basics](/tarangify-docs/docs/ESP32%20Basic%20Tutorials%20/Arduino%20Tutorials/9WiFi-Networking-Basics)
+* [Section 9: Wi-Fi Basics](/tarangify-docs/docs/ESP32%20Basic%20Tutorials%20/Arduino%20Tutorials/9Wi-Fi-Networking-Basics)
 * [Section 10: Web Server](/tarangify-docs/docs/ESP32%20Basic%20Tutorials%20/Arduino%20Tutorials/10Web-Server)
 * [Section 11: Bluetooth](/tarangify-docs/docs/ESP32%20Basic%20Tutorials%20/Arduino%20Tutorials/11Bluetooth)
 * [Adafruit NeoPixel library documentation](https://learn.adafruit.com/adafruit-neopixel-uberguide)

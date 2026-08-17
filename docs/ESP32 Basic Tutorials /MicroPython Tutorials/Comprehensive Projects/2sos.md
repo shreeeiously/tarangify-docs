@@ -51,7 +51,7 @@ You'll need:
 - Jumper wires
 - An ESP32-series board
 
-Wire the LED the same way as [Section 3](./3digital-io#21-wire-it-up), and the buzzer's signal pin to its own GPIO pin with the other leg to GND. This example uses GPIO7 for the LED and GPIO8 for the buzzer.
+Wire the LED the same way as [Section 3](../digital-io#21-wire-it-up), and the buzzer's signal pin to its own GPIO pin with the other leg to GND. This example uses GPIO7 for the LED and GPIO8 for the buzzer.
 
 :::note
 
@@ -175,13 +175,6 @@ finally:
 
 ## Reference Links
 
-* [Section 3: GPIO Digital Output/Input](./3digital-io)
+* [Section 3: GPIO Digital Output/Input](../digital-io)
 * [Morse code — Wikipedia](https://en.wikipedia.org/wiki/Morse_code)
 
----
-
-## Next Step
-
-Continue to:
-
-[**Motion Sensor Light →**](./3presence-light)

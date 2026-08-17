@@ -12,7 +12,7 @@ This section covers how I2C works, then puts it to use two ways: scanning a bus 
 
 :::info
 
-Make sure you've completed [**Section 1: Set Up Development Environment**](./getting-started) through [**Section 6: UART Communication**](./uart-communication) before starting this section.
+Make sure you've completed [**Section 1: Set Up Development Environment**](./micropython-getting-started) through [**Section 6: UART Communication**](./uart-communication) before starting this section.
 
 :::
 

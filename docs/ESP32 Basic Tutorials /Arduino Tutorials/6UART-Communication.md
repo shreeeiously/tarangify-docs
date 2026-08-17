@@ -4,7 +4,7 @@ title: UART Communication
 description: Learn how to use UART serial communication on ESP32 for debugging and device-to-device communication.
 ---
 
-# UART Communication
+# Section 6: UART Communication
 
 UART (Universal Asynchronous Receiver/Transmitter) is one of the most widely used communication interfaces in embedded systems. It allows two devices to exchange data using only two signal lines: TX (Transmit) and RX (Receive). UART is commonly used for debugging, communication with sensors and modules, and data exchange between microcontrollers. :contentReference[oaicite:0]{index=0}
 

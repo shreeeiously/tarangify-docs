@@ -128,13 +128,6 @@ The loop polls every 100ms — frequent enough to feel responsive, without needl
 
 ## Reference Links
 
-* [Section 3: GPIO Digital Output/Input](./3digital-io)
+* [Section 3: GPIO Digital Output/Input](../digital-io)
 * [MicroPython `neopixel` module reference](https://docs.micropython.org/en/latest/library/neopixel.html)
 
----
-
-## Next Step
-
-Continue to:
-
-[**Fun LED Strip →**](./4led-strip)

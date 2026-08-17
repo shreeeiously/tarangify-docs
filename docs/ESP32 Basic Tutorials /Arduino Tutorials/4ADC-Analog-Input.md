@@ -4,7 +4,7 @@ title: Analog Input
 description: Learn how to read analog voltages using the ESP32 ADC.
 ---
 
-# Analog Input
+# Section 4: Analog Input
 
 Many sensors produce continuously changing voltage signals rather than simple ON/OFF states. To measure these signals, the ESP32 uses an ADC (Analog-to-Digital Converter).
 

@@ -12,7 +12,7 @@ This section covers how SPI works, how ESP32's SPI hardware and pin mapping are 
 
 :::info
 
-Make sure you've completed [**Section 1: Set Up Development Environment**](./getting-started) through [**Section 7: I2C Communication**](./i2c-communication) before starting this section.
+Make sure you've completed [**Section 1: Set Up Development Environment**](./micropython-getting-started) through [**Section 7: I2C Communication**](./i2c-communication) before starting this section.
 
 :::
 

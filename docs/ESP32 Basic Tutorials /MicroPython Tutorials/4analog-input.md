@@ -12,7 +12,7 @@ This section covers what analog signals are and how ESP32's ADC turns them into 
 
 :::info
 
-Make sure you've completed [**Section 1: Set Up Development Environment**](./getting-started) through [**Section 3: GPIO Digital Output/Input**](./digital-io) before starting this section.
+Make sure you've completed [**Section 1: Set Up Development Environment**](./micropython-getting-started) through [**Section 3: GPIO Digital Output/Input**](./digital-io) before starting this section.
 
 :::
 

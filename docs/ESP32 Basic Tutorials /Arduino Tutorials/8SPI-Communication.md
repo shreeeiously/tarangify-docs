@@ -4,7 +4,7 @@ title: SPI Communication
 description: Learn how to use SPI communication on ESP32 for high-speed data transfer with displays, SD cards, sensors, and memory devices.
 ---
 
-# SPI Communication
+# Section 8: SPI Communication
 
 SPI (Serial Peripheral Interface) is a high-speed synchronous communication protocol widely used in embedded systems. It enables fast data exchange between a microcontroller and peripherals such as displays, SD cards, sensors, and external memory devices. SPI is generally faster than both UART and I2C, making it suitable for applications that require high data transfer rates. :contentReference[oaicite:0]{index=0}
 

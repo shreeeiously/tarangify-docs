@@ -4,7 +4,7 @@ title: Web Server
 description: Learn how to create web servers using ESP32 and control hardware from any web browser.
 ---
 
-# Web Server
+# Section 10: Web Server
 
 One of the most powerful features of the ESP32 is its ability to host web pages directly from the microcontroller. By combining the ESP32's built-in Wi-Fi capabilities with an HTTP server, you can create browser-based interfaces for monitoring sensors, controlling hardware, and building Internet of Things (IoT) applications. :contentReference[oaicite:0]{index=0}
 

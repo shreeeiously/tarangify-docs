@@ -4,7 +4,7 @@ title: Bluetooth Communication
 description: Learn how to use Bluetooth Low Energy (BLE) on ESP32 for wireless communication with smartphones and other devices.
 ---
 
-# Bluetooth Communication
+# Section 11: Bluetooth Communication
 
 The ESP32 includes built-in Bluetooth functionality, making it ideal for wireless communication projects. Bluetooth enables devices to exchange data without requiring Wi-Fi or an Internet connection. It is commonly used in wearable devices, wireless sensors, mobile applications, smart home systems, and IoT products. :contentReference[oaicite:0]{index=0}
 

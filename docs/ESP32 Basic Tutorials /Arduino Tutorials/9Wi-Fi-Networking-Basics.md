@@ -4,7 +4,7 @@ title: Wi-Fi Networking Basics
 description: Learn how to connect ESP32 to Wi-Fi networks, scan available networks, create access points, and configure network settings.
 ---
 
-# Wi-Fi Networking Basics
+# Section 9: Wi-Fi Networking Basics
 
 One of the most powerful features of the ESP32 is its built-in Wi-Fi capability. This allows the ESP32 to connect to wireless networks, communicate with cloud services, host web servers, and build Internet of Things (IoT) applications. Most ESP32 development boards include integrated 2.4 GHz Wi-Fi functionality. :contentReference[oaicite:0]{index=0}
 

@@ -12,7 +12,7 @@ This section covers how UART serial communication works, then puts it into pract
 
 :::info
 
-Make sure you've completed [**Section 1: Set Up Development Environment**](./getting-started) through [**Section 5: PWM Output**](./pwm) before starting this section.
+Make sure you've completed [**Section 1: Set Up Development Environment**](./micropython-getting-started) through [**Section 5: PWM Output**](./pwm) before starting this section.
 
 :::
 

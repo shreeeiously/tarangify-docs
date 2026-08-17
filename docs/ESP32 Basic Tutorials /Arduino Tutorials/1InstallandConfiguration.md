@@ -4,7 +4,7 @@ title: Arduino IDE Setup
 description: Learn how to install and configure Arduino IDE for ESP32 development.
 ---
 
-# Arduino IDE Setup
+# Section 1: Arduino IDE Setup
 
 This guide explains how to install Arduino IDE and configure it for ESP32 development boards.
 

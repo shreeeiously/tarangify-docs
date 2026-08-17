@@ -12,7 +12,7 @@ ESP32's built-in Wi-Fi means it can act as a small web server of its own — ser
 
 :::info
 
-Make sure you've completed [**Section 1: Set Up Development Environment**](./getting-started) through [**Section 9: Wi-Fi Networking Basics**](./wifi-networking-basic) before starting this section.
+Make sure you've completed [**Section 1: Set Up Development Environment**](./micropython-getting-started) through [**Section 9: Wi-Fi Networking Basics**](./wifi-networking-basic) before starting this section.
 
 :::
 

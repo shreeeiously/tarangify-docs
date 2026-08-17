@@ -28,7 +28,7 @@ You'll need:
 - Jumper wires
 - An ESP32-series board
 
-Wire the potentiometer as in [Section 4](./4analog-input#3-wire-up-a-potentiometer), and the LED strip's data-in line to its own GPIO pin (plus power and ground per the strip's requirements). This example uses GPIO7 for the potentiometer and GPIO8 for the strip.
+Wire the potentiometer as in [Section 4](../analog-input#3-wire-up-a-potentiometer), and the LED strip's data-in line to its own GPIO pin (plus power and ground per the strip's requirements). This example uses GPIO7 for the potentiometer and GPIO8 for the strip.
 
 ## Code
 
@@ -113,13 +113,6 @@ Checking from highest threshold to lowest is what makes this work correctly as a
 
 ## Reference Links
 
-* [Section 4: ADC Analog Input](./4analog-input)
+* [Section 4: ADC Analog Input](../analog-input)
 * [MicroPython `neopixel` module reference](https://docs.micropython.org/en/latest/library/neopixel.html)
 
----
-
-## Next Step
-
-Continue to:
-
-[**Interactive Progress Bar →**](./5progress-bar)
