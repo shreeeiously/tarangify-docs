@@ -54,8 +54,8 @@ sidebar_position: 2
 
 ### 6. SHT35 Temperature Sensor
 
-- [SHT35 Temperature & Humidity Sensor Example](./Examples/06%20Temperature%20Sensor)
+- [SHT35 Temperature & Humidity Sensor Example](./Examples/06%20Temperature-Sensor)
 
 ### 7. Servo Motor
 
-- [Servo Motor Example](./Examples/07%20Servo%20Motor)
+- [Servo Motor Example](./Examples/07%20Servo-Motor)
