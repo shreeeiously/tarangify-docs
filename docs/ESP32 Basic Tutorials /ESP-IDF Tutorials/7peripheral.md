@@ -105,12 +105,3 @@ When you're building a driver for a specific peripheral, these are the resources
 
 Combining the reference manual with working example code is usually the fastest path from "I need to use peripheral X" to a working driver. For anything not covered here, the [ESP32 community forum](https://esp32.com/) is a good place to search or ask.
 
----
-
-## Next Step
-
-You now know what peripherals are available, how pin routing works, and the general shape of a peripheral driver.
-
-Continue to:
-
-[**Section 8 - Wi-Fi Programming →**](./8wifi)

@@ -184,12 +184,3 @@ while True:
 * [MicroPython ESP32 PWM Tutorial](https://docs.micropython.org/en/latest/esp32/tutorial/pwm.html#esp32-pwm)
 * [MicroPython `machine.PWM` class reference](https://docs.micropython.org/en/latest/library/machine.PWM.html)
 
----
-
-## Next Step
-
-You can now generate PWM signals to dim LEDs, build fade effects, and tie output brightness to sensor input.
-
-Continue to:
-
-[**Section 6: UART Communication →**](./6uart-communication)

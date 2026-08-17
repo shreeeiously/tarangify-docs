@@ -300,12 +300,3 @@ while True:
 * [MicroPython `machine.Pin` class reference](https://docs.micropython.org/en/latest/library/machine.Pin.html)
 * [MicroPython `time.sleep` reference](https://docs.micropython.org/en/latest/library/time.html#time.sleep)
 
----
-
-## Next Step
-
-You can now drive digital outputs and read digital inputs, including handling the real-world messiness of button bounce.
-
-Continue to:
-
-[**Section 4: ADC Analog Input →**](./4analog-input)

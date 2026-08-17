@@ -181,12 +181,3 @@ An infinite `while(1)` loop is the normal pattern for a FreeRTOS task that shoul
 * [ESP-IDF GPIO API Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/gpio.html)
 * [FreeRTOS Task Control API](https://docs.espressif.com/projects/esp-techpedia/en/latest/esp-friends/get-started/code-development/common-freertos-api/task-control.html)
 
----
-
-## Next Step
-
-You've now created an ESP-IDF project from scratch and written your own GPIO code.
-
-Continue to:
-
-[**Section 4: Use Component →**](./4component)

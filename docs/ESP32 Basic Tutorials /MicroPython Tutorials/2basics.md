@@ -249,12 +249,3 @@ help(machine.Pin)
 * [MicroPython REPL reference](https://docs.micropython.org/en/latest/reference/repl.html)
 * [MicroPython boot process reference](https://docs.micropython.org/en/latest/reference/reset_boot.html)
 
----
-
-## Next Step
-
-You're now comfortable moving between the REPL and saved scripts, and you understand how the board decides what runs on boot.
-
-Continue to:
-
-[**Section 3: GPIO Digital Output/Input →**](./3digital-io)

@@ -206,12 +206,3 @@ MicroPython's `machine.I2C` and `machine.SoftI2C` classes only implement control
 * [micropython-ssd1327 driver library](https://github.com/mcauser/micropython-ssd1327)
 * [MicroPython `framebuf` module reference](https://docs.micropython.org/en/latest/library/framebuf.html)
 
----
-
-## Next Step
-
-You can now discover devices on an I2C bus and drive a real display over it.
-
-Continue to:
-
-[**Section 8: SPI Communication →**](./8spi-communication)

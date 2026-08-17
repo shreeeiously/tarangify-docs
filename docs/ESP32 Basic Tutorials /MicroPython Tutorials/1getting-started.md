@@ -118,12 +118,3 @@ At this point your MicroPython environment is fully working, and you've run your
 * [MicroPython official documentation](https://docs.micropython.org/en/latest/reference/index.html)
 * [MicroPython firmware downloads](https://micropython.org/download/?port=esp32)
 
----
-
-## Next Step
-
-Your board now runs MicroPython and you can talk to it through the REPL.
-
-Continue to:
-
-[**Section 2: Basics →**](./2basic)

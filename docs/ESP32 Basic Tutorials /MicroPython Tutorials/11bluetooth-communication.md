@@ -473,12 +473,3 @@ Flash the peripheral code to Board A and the central code to Board B. Board A st
 * [MicroPython `asyncio` reference](https://docs.micropython.org/en/latest/library/asyncio.html)
 * [Python `struct` byte order reference](https://docs.python.org/3/library/struct.html#byte-order-size-and-alignment)
 
----
-
-## Next Step
-
-You can now build both BLE peripherals and centrals — broadcasting sensor data, receiving commands, and linking two boards directly.
-
-Continue to:
-
-[**Section 12: Comprehensive Projects →**](./12fun-project)

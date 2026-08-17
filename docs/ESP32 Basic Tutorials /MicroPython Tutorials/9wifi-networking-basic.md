@@ -242,13 +242,3 @@ print("AP started")
 * [MicroPython ESP32 Quick Reference — Networking](https://docs.micropython.org/en/latest/esp32/quickref.html#networking)
 * [MicroPython `network` module reference](https://docs.micropython.org/en/latest/library/network.html)
 * [MicroPython `network.WLAN` class reference](https://docs.micropython.org/en/latest/library/network.WLAN.html)
-
----
-
-## Next Step
-
-You can now scan, connect, host a hotspot, and set static IPs on ESP32's Wi-Fi.
-
-Continue to:
-
-[**Section 10: Web Server →**](./10web-server)

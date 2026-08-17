@@ -190,12 +190,3 @@ ESP-IDF's own [`examples/protocols`](https://github.com/espressif/esp-idf/tree/m
 * [ESP-IDF Application-Layer Protocols API Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-reference/protocols/index.html)
 * [ESP-IDF protocol examples](https://github.com/espressif/esp-idf/tree/master/examples/protocols)
 
----
-
-## Next Step
-
-Your board can now create its own Wi-Fi network and handle connection events.
-
-Continue to:
-
-[**Section 9: BLE Programming →**](./9ble)

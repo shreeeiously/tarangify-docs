@@ -181,12 +181,3 @@ Run this and you'll see the same layout as the I2C example — "Hello," in brigh
 * [MicroPython `framebuf` module reference](https://docs.micropython.org/en/latest/library/framebuf.html)
 * [OSHWA: A Resolution to Redefine SPI Signal Names](https://oshwa.org/resources/a-resolution-to-redefine-spi-signal-names/)
 
----
-
-## Next Step
-
-You can now drive high-speed SPI peripherals in addition to I2C ones.
-
-Continue to:
-
-[**Section 9: Wi-Fi Networking Basics →**](./9wifi-networking-basic)

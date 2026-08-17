@@ -185,12 +185,3 @@ Running this alongside the raw reading, you should see the "Smooth" value notice
 * [MicroPython `machine.ADC` class reference](https://docs.micropython.org/en/latest/library/machine.ADC.html)
 * [MicroPython `machine.ADCBlock` class reference](https://docs.micropython.org/en/latest/library/machine.ADCBlock.html)
 
----
-
-## Next Step
-
-You can now read continuously varying analog signals and clean up the noise that comes with them.
-
-Continue to:
-
-[**Section 5: PWM Output →**](./5pwm)

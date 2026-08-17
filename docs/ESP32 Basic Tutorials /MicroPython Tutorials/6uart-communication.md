@@ -226,12 +226,3 @@ Press the button on Board A — Board B's LED should light up. Board A's Shell l
 * [MicroPython ESP32 Quick Reference — UART](https://docs.micropython.org/en/latest/esp32/quickref.html#uart-serial-bus)
 * [MicroPython `machine.UART` class reference](https://docs.micropython.org/en/latest/library/machine.UART.html)
 
----
-
-## Next Step
-
-You can now send and receive UART data, both from a computer's REPL and between two independent boards.
-
-Continue to:
-
-[**Section 7: I2C Communication →**](./7i2c-communication)

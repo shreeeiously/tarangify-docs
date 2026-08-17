@@ -299,12 +299,3 @@ Like any other component, a BSP can be pulled into a project through the Compone
 * [espressif/button component](https://components.espressif.com/components/espressif/button)
 * [ESP-IDF Build System](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html)
 
----
-
-## Next Step
-
-You now understand how ESP-IDF components are structured and organized, and you've used both a built-in driver and an external managed component.
-
-Continue to:
-
-[**Section 5: Debug →**](./5debug)

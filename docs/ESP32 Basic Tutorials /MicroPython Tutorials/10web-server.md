@@ -324,12 +324,3 @@ Run the script, then connect a phone or laptop to the ESP32's own Wi-Fi network 
 * [MicroPython `socket` module reference](https://docs.micropython.org/en/latest/library/socket.html)
 * [MicroPython `network` module reference](https://docs.micropython.org/en/latest/library/network.html)
 
----
-
-## Next Step
-
-You can now serve a working HTTP interface directly from an ESP32 board, over either an existing network or its own hotspot.
-
-Continue to:
-
-[**Section 11: Bluetooth →**](./11bluetooth-communication)

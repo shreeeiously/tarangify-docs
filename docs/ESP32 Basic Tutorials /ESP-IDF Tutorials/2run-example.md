@@ -241,12 +241,3 @@ Before moving on, confirm that:
 * [ ] You configured the correct LED type and GPIO pin for your board.
 * [ ] The onboard LED blinks after flashing.
 
----
-
-## Next Step
-
-You've now built, flashed, and monitored your first ESP-IDF examples.
-
-Continue to:
-
-[**Section 3: Create Project →**](./3create-project)

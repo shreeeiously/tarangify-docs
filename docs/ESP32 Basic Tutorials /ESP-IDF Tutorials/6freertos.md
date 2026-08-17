@@ -194,12 +194,3 @@ xTaskCreatePinnedToCore(Demo_Task_B, "Demo_Task_B", 4096, NULL, 10, &myTaskHandl
 * [What is FreeRTOS?](https://www.freertos.org/Why-FreeRTOS/What-is-FreeRTOS)
 * [FreeRTOS Beginner's Guide](https://www.freertos.org/Documentation/01-FreeRTOS-quick-start/01-Beginners-guide/00-Overview)
 
----
-
-## Next Step
-
-You now understand FreeRTOS tasks, dual-core scheduling, and the basic task lifecycle APIs.
-
-Continue to:
-
-[**Section 7: Peripheral →**](./7peripheral)

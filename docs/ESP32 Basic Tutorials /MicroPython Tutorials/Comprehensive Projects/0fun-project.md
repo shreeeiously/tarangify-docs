@@ -1,9 +1,9 @@
 ---
 id: fun-project
-title: Section 12: Comprehensive Projects
+title: "Section 12: Comprehensive Projects"
 sidebar_label: Comprehensive Projects
 sidebar_position: 1
-description: Combine GPIO, PWM, I2C, SPI, Wi-Fi, and Bluetooth skills into practical ESP32 projects.
+description: "Combine GPIO, PWM, I2C, SPI, Wi-Fi, and Bluetooth skills into practical ESP32 projects."
 ---
 # Section 12: Comprehensive Projects
 

@@ -168,12 +168,3 @@ If breakpoints don't line up with your code or variables look wrong, it's often 
 * [ESP-IDF VS Code Extension — Debug Project](https://docs.espressif.com/projects/vscode-esp-idf-extension/en/latest/debugproject.html)
 * [openocd-esp32 Troubleshooting FAQ](https://github.com/espressif/openocd-esp32/wiki/Troubleshooting-FAQ)
 
----
-
-## Next Step
-
-You can now set breakpoints, step through code, and inspect variables live on real hardware.
-
-Continue to:
-
-[**Section 6: FreeRTOS →**](./6freertos)

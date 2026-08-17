@@ -560,13 +560,5 @@ Once these steps are complete, your development environment is ready.
 * [ESP-IDF VS Code Extension Documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/developing-with-vscode.html)
 * [ESP-IDF GitHub Repository](https://github.com/espressif/esp-idf)
 
----
 
-## Next Step
-
-Your ESP-IDF development environment is now ready.
-
-Continue to:
-
-[**Section 2: Run Example →**](./2run-example)
 
