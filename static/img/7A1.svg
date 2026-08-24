@@ -1,0 +1,91 @@
+<svg width="1600" height="720" viewBox="20 20 800 360" xmlns="http://www.w3.org/2000/svg">
+
+  <desc>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-Arduino-Tutorials/I2C-Communication</desc>
+  <metadata>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-Arduino-Tutorials/I2C-Communication</metadata>
+    <!-- Background -->
+    <rect width="900" height="600" fill="#FFF"/>
+    <!-- Power Line -->
+    <line x1="50" y1="50" x2="750" y2="50" stroke="#666" stroke-width="2"/>
+    <text x="760" y="55" font-family="Arial" font-size="12" fill="#333">VCC</text>
+    <text x="760" y="75" font-family="Arial" font-size="12" fill="#333">3.3V</text>
+    <!-- SDA Line -->
+    <line x1="50" y1="150" x2="750" y2="150" stroke="#333" stroke-width="2"/>
+    <text x="760" y="155" font-family="Arial" font-size="12" fill="#333">SDA</text>
+    <!-- SCL Line -->
+    <line x1="50" y1="200" x2="750" y2="200" stroke="#333" stroke-width="2"/>
+    <text x="760" y="205" font-family="Arial" font-size="12" fill="#333">SCL</text>
+    <!-- GND Line -->
+    <line x1="50" y1="350" x2="750" y2="350" stroke="#333" stroke-width="2"/>
+    <text x="760" y="355" font-family="Arial" font-size="12" fill="#333">GND</text>
+    <!-- SDA Pull-up Resistor -->
+    <line x1="650" y1="50" x2="650" y2="90" stroke="#555" stroke-width="1.5"/>
+    <rect x="645" y="90" width="10" height="30" fill="none" stroke="#555" stroke-width="1.5"/>
+    <line x1="650" y1="120" x2="650" y2="150" stroke="#555" stroke-width="1.5"/>
+    <text x="615" y="110" font-family="Arial" font-size="10" fill="#555">4.7kΩ</text>
+    <!-- SCL Pull-up Resistor -->
+    <line x1="700" y1="50" x2="700" y2="90" stroke="#555" stroke-width="1.5"/>
+    <rect x="695" y="90" width="10" height="30" fill="none" stroke="#555" stroke-width="1.5"/>
+    <line x1="700" y1="120" x2="700" y2="200" stroke="#555" stroke-width="1.5"/> 
+    <text x="665" y="110" font-family="Arial" font-size="10" fill="#555">4.7kΩ</text>
+    <!-- Master Device ESP32 -->
+    <rect x="80" y="250" width="100" height="80" fill="#f5f5f5" stroke="#333" stroke-width="2"/>
+    <text x="130" y="285" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">ESP32</text>
+    <text x="130" y="300" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">I2C Master</text>
+    <!-- Master Connection Lines -->
+    <line x1="130" y1="250" x2="130" y2="50" stroke="#666" stroke-width="1.5"/>
+    <line x1="120" y1="250" x2="120" y2="150" stroke="#333" stroke-width="1.5"/>
+    <line x1="140" y1="250" x2="140" y2="200" stroke="#333" stroke-width="1.5"/>
+    <line x1="130" y1="330" x2="130" y2="350" stroke="#333" stroke-width="1.5"/>
+    <!-- Slave 1 - Sensor -->
+    <rect x="250" y="250" width="80" height="80" fill="#f9f9f9" stroke="#666" stroke-width="1.5"/>
+    <text x="290" y="280" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Sensor</text>
+    <text x="290" y="295" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">BME280</text>
+    <text x="290" y="310" font-family="Arial" font-size="9" fill="#888" text-anchor="middle">Address: 0x76</text>
+    <!-- Slave 1 Connection Lines -->
+    <line x1="290" y1="250" x2="290" y2="50" stroke="#666" stroke-width="1.5"/>
+    <line x1="280" y1="250" x2="280" y2="150" stroke="#333" stroke-width="1.5"/>
+    <line x1="300" y1="250" x2="300" y2="200" stroke="#333" stroke-width="1.5"/>
+    <line x1="290" y1="330" x2="290" y2="350" stroke="#333" stroke-width="1.5"/>
+    <!-- Slave 2 - Display -->
+    <rect x="400" y="250" width="80" height="80" fill="#f9f9f9" stroke="#666" stroke-width="1.5"/>
+    <text x="440" y="280" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">OLED Display</text>
+    <text x="440" y="295" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">SSD1306</text>
+    <text x="440" y="310" font-family="Arial" font-size="9" fill="#888" text-anchor="middle">Address: 0x3D</text>
+    <!-- Slave 2 Connection Lines -->
+    <line x1="440" y1="250" x2="440" y2="50" stroke="#666" stroke-width="1.5"/>
+    <line x1="430" y1="250" x2="430" y2="150" stroke="#333" stroke-width="1.5"/>
+    <line x1="450" y1="250" x2="450" y2="200" stroke="#333" stroke-width="1.5"/>
+    <line x1="440" y1="330" x2="440" y2="350" stroke="#333" stroke-width="1.5"/>
+    <!-- Slave 3 - Memory -->
+    <rect x="550" y="250" width="80" height="80" fill="#f9f9f9" stroke="#666" stroke-width="1.5"/>
+    <text x="590" y="280" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Memory</text>
+    <text x="590" y="295" font-family="Arial" font-size="9" fill="#666" text-anchor="middle">AT24C256</text>
+    <text x="590" y="310" font-family="Arial" font-size="9" fill="#888" text-anchor="middle">Address: 0x50</text>
+    <!-- Slave 3 Connection Lines -->
+    <line x1="590" y1="250" x2="590" y2="50" stroke="#666" stroke-width="1.5"/>
+    <line x1="580" y1="250" x2="580" y2="150" stroke="#333" stroke-width="1.5"/>
+    <line x1="600" y1="250" x2="600" y2="200" stroke="#333" stroke-width="1.5"/>
+    <line x1="590" y1="330" x2="590" y2="350" stroke="#333" stroke-width="1.5"/>
+    <!-- Connection Points -->
+    <circle cx="130" cy="50" r="2" fill="#666"/>
+    <circle cx="290" cy="50" r="2" fill="#666"/>
+    <circle cx="440" cy="50" r="2" fill="#666"/>
+    <circle cx="590" cy="50" r="2" fill="#666"/>
+    <circle cx="650" cy="50" r="2" fill="#666"/>
+    <circle cx="700" cy="50" r="2" fill="#666"/>
+    <circle cx="120" cy="150" r="2" fill="#333"/>
+    <circle cx="280" cy="150" r="2" fill="#333"/>
+    <circle cx="430" cy="150" r="2" fill="#333"/>
+    <circle cx="580" cy="150" r="2" fill="#333"/>
+    <circle cx="650" cy="150" r="2" fill="#333"/>
+    <circle cx="140" cy="200" r="2" fill="#333"/>
+    <circle cx="300" cy="200" r="2" fill="#333"/>
+    <circle cx="450" cy="200" r="2" fill="#333"/>
+    <circle cx="600" cy="200" r="2" fill="#333"/>
+    <circle cx="700" cy="200" r="2" fill="#333"/>
+    <circle cx="130" cy="350" r="2" fill="#333"/>
+    <circle cx="290" cy="350" r="2" fill="#333"/>
+    <circle cx="440" cy="350" r="2" fill="#333"/>
+    <circle cx="590" cy="350" r="2" fill="#333"/>
+  <!-- Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-Arduino-Tutorials/I2C-Communication -->
+</svg>

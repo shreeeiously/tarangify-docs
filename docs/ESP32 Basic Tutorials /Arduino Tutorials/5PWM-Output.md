@@ -54,59 +54,17 @@ Example:
 
 Duty Cycle is the percentage of time a signal remains HIGH during one cycle.
 
-### 0% Duty Cycle
+![Arduino IDE](/img/5A1.webp)
 
-```text
-LOW LOW LOW LOW
-```
-
-Output = OFF
-
----
-
-### 25% Duty Cycle
-
-```text
-HIGH LOW LOW LOW
-```
-
-Output = Dim
-
----
-
-### 50% Duty Cycle
-
-```text
-HIGH LOW HIGH LOW
-```
-
-Output = Medium Brightness
-
----
-
-### 75% Duty Cycle
-
-```text
-HIGH HIGH HIGH LOW
-```
-
-Output = Bright
-
----
-
-### 100% Duty Cycle
-
-```text
-HIGH HIGH HIGH HIGH
-```
-
-Output = Fully ON
-
----
+- **Duty cycle 0%** : Average voltage ≈ 0V
+- **Duty cycle 25%** : Average voltage ≈ 0.825V (3.3V * 0.25)
+- **Duty cycle 50%** : Average voltage ≈ 1.65V (3.3V * 0.50)
+- **Duty cycle 75%** : Average voltage ≈ 2.475V (3.3V * 0.75)
+- **Duty cycle 100%** : Average voltage ≈ 3.3V
 
 # PWM on ESP32
 
-The ESP32 contains dedicated hardware called **LEDC (LED Control)** for generating PWM signals. Depending on the ESP32 variant, multiple PWM channels can be generated independently. :contentReference[oaicite:2]{index=2}
+The ESP32 contains dedicated hardware called **LEDC (LED Control)** for generating PWM signals. Depending on the ESP32 variant, multiple PWM channels can be generated independently. 
 
 PWM can be used with:
 
@@ -206,7 +164,7 @@ Dim
 Dark
 ```
 
-This is one of the most common PWM demonstrations. :contentReference[oaicite:3]{index=3}
+This is one of the most common PWM demonstrations.
 
 ---
 
@@ -238,8 +196,7 @@ Where:
 128  = Duty Cycle Value
 ```
 
-LEDC functions provide more flexibility when working with motors, servos, and advanced control applications. :contentReference[oaicite:4]{index=4}
-
+LEDC functions provide more flexibility when working with motors, servos, and advanced control applications. 
 ---
 
 # Resolution

@@ -31,6 +31,8 @@ Think of a room light switch:
 - ON = HIGH
 - OFF = LOW
 
+![Arduino IDE](/img/3A1.svg)
+
 The ESP32 uses these two states to communicate with external hardware.
 
 ---
@@ -216,6 +218,9 @@ This keeps the pin HIGH when the button is not pressed.
 | Released | HIGH |
 | Pressed | LOW |
 
+
+![Arduino IDE](/img/3A2.svg)
+
 ---
 
 # Reading a Button and Controlling an LED
@@ -245,6 +250,12 @@ void loop()
 }
 ```
 
+:::info  
+### What is Button Bouncing?
+At the moment a mechanical button is pressed or released, its internal metal contacts experience a brief, rapid physical bounce. This results in the circuit actually being turned on and off many times in milliseconds when the person feels like it has only been pressed once. The ESP32 is so fast that it picks up every tiny on/off and therefore mistakenly recognizes it as multiple button presses.
+
+![Arduino IDE](/img/3A3.svg)
+::: 
 ---
 
 # Common GPIO Functions

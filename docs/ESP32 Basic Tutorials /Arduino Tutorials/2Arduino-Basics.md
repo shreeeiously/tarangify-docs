@@ -139,7 +139,7 @@ After uploading:
 
 2. Set baud rate to **115200**.
 
-![Arduino IDE](/img/2A6.jpg)
+![Arduino IDE](/img/6A3.webp)
 
 Output:
 
@@ -254,6 +254,42 @@ loop()
     ▼
 Forever
 ```
+
+---
+
+## Navigating Official Documentation
+### 1. ESP32 Arduino Core Documentation
+- While many core Arduino functions apply to the ESP32, the ESP32 chip is much more powerful than the traditional Arduino Uno, so it has many unique APIs and libraries (e.g., for Wi-Fi, Bluetooth, FreeRTOS, etc.).
+
+- [Arduino Core for ESP32 Documentation](https://docs.espressif.com/projects/arduino-esp32/en/latest/index.html)
+- [Espressif official Documentation (ESP-IDF)](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/) (This is the underlying SDK documentation; the Arduino Core is wrapped around this).
+
+### 2. Arduino Official Reference:
+- URL: https://www.arduino.cc/reference/en/
+- This is the authoritative official resource for learning Arduino programming. It details the core functions, data types, structures, and usage of commonly used libraries in the Arduino language.
+- How to use: On the website, you can search directly for function names (like Serial.println) or browse through categories on the left (Variables, Functions, Libraries, etc.). Each entry typically contains a function description, syntax, parameter explanation, return values, and example code.
+
+### 3. Getting Started with Arduino:
+- URL: https://docs.arduino.cc/learn/starting-guide/getting-started-arduino
+- This guide is highly recommended for beginners. It provides a comprehensive overview of the Arduino ecosystem, explaining the relationship between hardware and software, making it an ideal starting point for those new to microcontrollers.
+
+### 4. Troubleshooting 
+#### 1. No new ports appear in the port list
+- Check if the USB cable is a data cable (not just a charging cable)
+- Confirm if the BOOT key was pressed correctly (if necessary)
+- Try plugging and unplugging the USB cable or replacing the USB port
+#### 2. Code upload failed
+- Confirm that the correct development board model is selected in the Arduino IDE
+- nCheck if the correct port is selected
+- Retry entering download mode by pressing the BOOT key
+- Close other programs that may be using the serial port
+#### 3. Serial monitor displays garbled characters
+- Check if the baud rate setting in the serial monitor is consistent with the value of Serial.begin() in the code
+#### 4. Upload successful but no output in Serial Monitor
+- For development boards with native USB ports, check if the **USB CDC On Boot** feature is enabled
+- Confirm the Serial Monitor is connected to the correct port.
+- Try pressing the RESET button on the board to restart the board.
+
 
 ---
 

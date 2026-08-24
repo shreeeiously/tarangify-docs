@@ -36,18 +36,30 @@ The **Hello World** example is the simplest possible ESP-IDF project. It prints 
 
 1. Open Visual Studio Code and click the ESP-IDF extension icon in the sidebar.
 2. Under the extension's project-creation options, choose **New Project Wizard**.
+
+![ESP-IDF](/img/2E1.webp)
+
 3. Select the ESP-IDF version you want the project to use.
 4. From the list of templates, choose **ESP-IDF Examples**, then locate **hello_world** under the **get-started** category.
+
+![ESP-IDF](/img/2E2.webp)
+
 5. Confirm creation using that template.
 6. Choose a project name and a save location, then create the project.
 
-:::danger
+![ESP-IDF](/img/2E3.webp)
+
+:::warning
 
 The project path must not contain spaces, non-ASCII characters, or other special characters. Paths that violate this can cause the build system to fail.
 
 :::
 
 7. Once the extension finishes copying the template files, open the newly created project.
+
+
+![ESP-IDF](/img/2E4.webp)
+
 
 ### 1.2 Understanding the Project Structure
 
@@ -77,11 +89,22 @@ Two more items appear automatically once you build the project:
 
 Before building, set up how the extension will talk to your board. These controls live in the ESP-IDF toolbar at the bottom of the VS Code window (see [Section 1, "VS Code ESP-IDF Interface"](./esp-idf-installation#4-vs-code-esp-idf-interface) for a reference).
 
+![ESP-IDF](/img/2E5.webp)
+
 1. **Flash Method** — choose the interface used to program the board (typically UART for most boards).
+
+![ESP-IDF](/img/2E6.webp)
+
 2. **Select Port** — connect your board over USB, then pick the matching serial port from the list.
+
+![ESP-IDF](/img/2E7.webp)
+
    - If you're not sure which port is yours, unplug the board and see which entry disappears, then plug it back in.
    - If no new port appears, some boards need to be put into download mode manually: hold the **BOOT** button, plug in the USB cable, then release **BOOT**.
+
 3. **Set Target** — select the chip that matches your board (for example `esp32s3` for ESP32-S3-based Tarangify boards).
+
+![ESP-IDF](/img/2E8.webp)
 
 :::info
 
@@ -130,6 +153,8 @@ idf.py monitor
 
 Once connected, you should see the board boot and print `Hello, world!` to the terminal.
 
+![ESP-IDF](/img/2E9.webp)
+
 Exit the monitor at any time with:
 
 ```text
@@ -157,6 +182,8 @@ Blink supports both simple GPIO-driven LEDs and addressable LEDs (such as WS2812
 ### 2.1 Open the Blink Project
 
 Follow the same steps as in [1.1](#11-create-the-project-from-a-template), but choose **blink** from the **get-started** category instead of `hello_world`.
+
+![ESP-IDF](/img/2E10.webp)
 
 ### 2.2 Project Structure and sdkconfig Defaults
 
@@ -212,6 +239,7 @@ You can change Blink's LED settings either through the graphical SDK Configurati
    ```bash
    idf.py menuconfig
    ```
+   ![ESP-IDF](/img/2E11.webp)
 
 2. Navigate to **Example Configuration** using the arrow keys, and press Enter to expand it.
 3. Set the same three options — LED type, GPIO number, and blink period.
@@ -228,6 +256,8 @@ Check your Tarangify board's documentation for the correct LED type and GPIO num
 Use the combined **Build, Flash and Monitor** icon (or `idf.py build flash monitor`) to compile, upload, and watch the output in one step.
 
 Once flashing finishes, the onboard LED should start blinking, and the serial monitor will show the example's log output.
+
+![ESP-IDF](/img/2E12.webp)
 
 ---
 

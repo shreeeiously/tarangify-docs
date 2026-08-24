@@ -6,7 +6,7 @@ description: Learn how to create web servers using ESP32 and control hardware fr
 
 # Section 10: Web Server
 
-One of the most powerful features of the ESP32 is its ability to host web pages directly from the microcontroller. By combining the ESP32's built-in Wi-Fi capabilities with an HTTP server, you can create browser-based interfaces for monitoring sensors, controlling hardware, and building Internet of Things (IoT) applications. :contentReference[oaicite:0]{index=0}
+One of the most powerful features of the ESP32 is its ability to host web pages directly from the microcontroller. By combining the ESP32's built-in Wi-Fi capabilities with an HTTP server, you can create browser-based interfaces for monitoring sensors, controlling hardware, and building Internet of Things (IoT) applications. 
 
 In this tutorial, you will learn:
 
@@ -32,7 +32,7 @@ http://192.168.1.100
 
 the browser sends an HTTP request to the ESP32.
 
-The ESP32 processes the request and returns a web page. :contentReference[oaicite:1]{index=1}
+The ESP32 processes the request and returns a web page. 
 
 ---
 
@@ -87,7 +87,7 @@ For most ESP32 projects, GET requests are sufficient.
 
 # WebServer Library
 
-The ESP32 Arduino framework includes the WebServer library, which makes it easy to create web servers. It supports route handling, request processing, and HTML responses. :contentReference[oaicite:2]{index=2}
+The ESP32 Arduino framework includes the WebServer library, which makes it easy to create web servers. It supports route handling, request processing, and HTML responses.
 
 Include the required libraries:
 
@@ -178,7 +178,7 @@ Process incoming requests:
 server.handleClient();
 ```
 
-This function should run continuously inside `loop()`. :contentReference[oaicite:3]{index=3}
+This function should run continuously inside `loop()`.
 
 ---
 
@@ -461,7 +461,7 @@ ESP32 web servers are commonly used for:
 - Industrial Monitoring
 - Remote Device Control
 
-Many makers use browser-based interfaces because they work on phones, tablets, and computers without requiring dedicated applications. :contentReference[oaicite:4]{index=4}
+Many makers use browser-based interfaces because they work on phones, tablets, and computers without requiring dedicated applications. 
 
 ---
 

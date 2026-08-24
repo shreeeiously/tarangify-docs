@@ -6,7 +6,7 @@ description: Learn how to use I2C communication on ESP32 to connect sensors, dis
 
 # Section 7: I2C Communication
 
-I2C (Inter-Integrated Circuit), sometimes written as I²C or IIC, is a popular communication protocol used to connect multiple devices using only two signal wires. It is commonly used for sensors, OLED displays, RTC modules, EEPROMs, and many other peripherals. :contentReference[oaicite:0]{index=0}
+I2C (Inter-Integrated Circuit), sometimes written as I²C or IIC, is a popular communication protocol used to connect multiple devices using only two signal wires. It is commonly used for sensors, OLED displays, RTC modules, EEPROMs, and many other peripherals. 
 
 In this tutorial, you will learn:
 
@@ -22,7 +22,7 @@ In this tutorial, you will learn:
 
 # What is I2C?
 
-I2C is a synchronous serial communication protocol that allows multiple devices to communicate over the same bus using only two wires. :contentReference[oaicite:1]{index=1}
+I2C is a synchronous serial communication protocol that allows multiple devices to communicate over the same bus using only two wires. 
 
 The two signals are:
 
@@ -31,7 +31,9 @@ The two signals are:
 | SDA | Serial Data Line |
 | SCL | Serial Clock Line |
 
-In addition to SDA and SCL, all devices must share a common GND connection. :contentReference[oaicite:2]{index=2}
+In addition to SDA and SCL, all devices must share a common GND connection. 
+
+![Arduino IDE](/img/7A1.svg)
 
 ---
 
@@ -68,7 +70,7 @@ Common I2C devices include:
        └─────────┘
 ```
 
-All devices share the same SDA and SCL lines. Each device has a unique address. :contentReference[oaicite:3]{index=3}
+All devices share the same SDA and SCL lines. Each device has a unique address. 
 
 ---
 
@@ -86,7 +88,7 @@ BME280 Sensor     → 0x76
 
 When the ESP32 communicates, it sends the device address first.
 
-Only the device with the matching address responds. :contentReference[oaicite:4]{index=4}
+Only the device with the matching address responds. 
 
 ---
 
@@ -94,7 +96,7 @@ Only the device with the matching address responds. :contentReference[oaicite:4]
 
 I2C uses an open-drain architecture.
 
-Because of this, SDA and SCL require pull-up resistors connected to 3.3V. Many modules already include these resistors onboard. :contentReference[oaicite:5]{index=5}
+Because of this, SDA and SCL require pull
 
 Typical values:
 
@@ -132,7 +134,7 @@ Where:
 9 = SCL
 ```
 
-ESP32 allows I2C to be assigned to many GPIO pins, providing greater flexibility than traditional Arduino boards. :contentReference[oaicite:6]{index=6}
+ESP32 allows I2C to be assigned to many GPIO pins, providing greater flexibility than traditional Arduino boards. 
 
 ---
 
@@ -140,7 +142,7 @@ ESP32 allows I2C to be assigned to many GPIO pins, providing greater flexibility
 
 Before using an I2C device, it is useful to identify its address.
 
-The I2C Scanner checks all possible addresses and reports any detected devices. :contentReference[oaicite:7]{index=7}
+The I2C Scanner checks all possible addresses and reports any detected devices. 
 
 ```cpp
 #include <Wire.h>
@@ -292,7 +294,7 @@ Read received data:
 byte value = Wire.read();
 ```
 
-These functions form the foundation of I2C communication. :contentReference[oaicite:8]{index=8}
+These functions form the foundation of I2C communication.
 
 ---
 
@@ -308,8 +310,7 @@ ESP32 A SCL → ESP32 B SCL
 ESP32 A GND → ESP32 B GND
 ```
 
-Pull-up resistors should be connected to SDA and SCL for reliable operation. :contentReference[oaicite:9]{index=9}
-
+Pull-up resistors should be connected to SDA and SCL for reliable operation. 
 ---
 
 # Common Wire Library Functions

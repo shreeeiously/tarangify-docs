@@ -43,15 +43,7 @@ ADC stands for:
 
 The ADC converts an analog voltage into a digital number that the ESP32 can process.
 
-```text
-Analog Voltage
-      │
-      ▼
-    ADC
-      │
-      ▼
- Digital Value
-```
+![Arduino IDE](/img/4A1.svg)
 
 For example:
 
@@ -61,7 +53,9 @@ For example:
 | 1.65V | ~2048 |
 | 3.3V | ~4095 |
 
-The ESP32 ADC typically uses a 12-bit resolution, providing values from 0 to 4095. :contentReference[oaicite:0]{index=0}
+![Arduino IDE](/img/4A2.webp)
+
+The ESP32 ADC typically uses a 12-bit resolution, providing values from 0 to 4095. 
 
 ---
 
@@ -93,7 +87,7 @@ For ESP32-S3 boards, commonly used ADC pins include:
 GPIO1  - GPIO10
 ```
 
-Always verify the pinout of your specific development board before connecting sensors. :contentReference[oaicite:1]{index=1}
+Always verify the pinout of your specific development board before connecting sensors. 
 
 ---
 
@@ -267,7 +261,7 @@ analogRead(pin);
 analogReadMilliVolts(pin);
 ```
 
-This function automatically converts the ADC reading into millivolts using ESP32 calibration data when supported. :contentReference[oaicite:2]{index=2}
+This function automatically converts the ADC reading into millivolts using ESP32 calibration data when supported. 
 
 ---
 

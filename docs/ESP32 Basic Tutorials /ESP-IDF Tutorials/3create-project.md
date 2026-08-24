@@ -49,11 +49,22 @@ The example code below uses GPIO7. If your board doesn't expose GPIO7, or reserv
 ## 2. Create a Project From Scratch
 
 1. Open Visual Studio Code, click the ESP-IDF extension icon, and open the **New Project Wizard**.
+
+![ESP-IDF](/img/3E1.webp)
+
 2. Select the ESP-IDF version you want the project to target.
+
+![ESP-IDF](/img/3E2.webp)
+
 3. Instead of choosing one of the example templates, select the **sample_project** template under **ESP-IDF Templates**, then confirm.
+
+![ESP-IDF](/img/3E3.webp)
+
 4. Choose a project name and save location. Board-specific settings can be changed later, so it's fine to leave them at their defaults for now.
 
-:::danger
+![ESP-IDF](/img/3E4.webp)
+
+:::warning
 
 The project path must not contain spaces, non-ASCII characters, or other special characters, or the build may fail.
 
@@ -61,11 +72,15 @@ The project path must not contain spaces, non-ASCII characters, or other special
 
 5. Once creation finishes, open the new project.
 
+![ESP-IDF](/img/3E5.webp)
+
 ---
 
 ## 3. Write the Application Code
 
 A new `sample_project` comes with a standard set of generated files and folders. For this tutorial, leave everything as-is and only edit `main.c`.
+
+![ESP-IDF](/img/3E6.webp)
 
 Replace its contents with the following:
 
@@ -105,13 +120,21 @@ If you see red squiggly underlines on valid ESP-IDF symbols before that, it's ty
 1. Open the command palette with `Ctrl + Shift + P`.
 2. Run **ESP-IDF: Run idf.py reconfigure Task**.
 
+![ESP-IDF](/img/3E7.webp)
+
 ---
 
 ## 4. Build and Flash
 
 1. As in Section 2, confirm your **target chip**, **serial port**, and **flash method** are set correctly in the ESP-IDF toolbar.
+
+![ESP-IDF](/img/3E8.webp)
+
 2. Use the combined **Build, Flash and Monitor** action to compile, upload, and open the serial monitor in one step.
+
 3. Once flashing completes, the LED should start blinking, and the serial monitor will print alternating `LED is ON` / `LED is OFF` messages roughly once per second.
+
+![ESP-IDF](/img/3E9.webp)
 
 ---
 

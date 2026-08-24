@@ -6,7 +6,7 @@ description: Learn how to connect ESP32 to Wi-Fi networks, scan available networ
 
 # Section 9: Wi-Fi Networking Basics
 
-One of the most powerful features of the ESP32 is its built-in Wi-Fi capability. This allows the ESP32 to connect to wireless networks, communicate with cloud services, host web servers, and build Internet of Things (IoT) applications. Most ESP32 development boards include integrated 2.4 GHz Wi-Fi functionality. :contentReference[oaicite:0]{index=0}
+One of the most powerful features of the ESP32 is its built-in Wi-Fi capability. This allows the ESP32 to connect to wireless networks, communicate with cloud services, host web servers, and build Internet of Things (IoT) applications. Most ESP32 development boards include integrated 2.4 GHz Wi-Fi functionality.
 
 In this tutorial, you will learn:
 
@@ -36,8 +36,7 @@ Using Wi-Fi, an ESP32 can:
 
 # ESP32 Wi-Fi Modes
 
-The ESP32 supports three primary Wi-Fi operating modes: :contentReference[oaicite:1]{index=1}
-
+The ESP32 supports three primary Wi-Fi operating modes: 
 | Mode | Description |
 |--------|--------|
 | STA | Connects to an existing Wi-Fi network |
@@ -87,7 +86,7 @@ In this mode, the ESP32 simultaneously:
 - Connects to an existing Wi-Fi network
 - Creates its own hotspot
 
-This is useful for advanced IoT applications and device configuration portals. :contentReference[oaicite:2]{index=2}
+This is useful for advanced IoT applications and device configuration portals. 
 
 ---
 
@@ -105,8 +104,7 @@ This library provides all networking features required for ESP32 Wi-Fi applicati
 
 # Example 1: Scan Available Wi-Fi Networks
 
-This example scans nearby Wi-Fi networks and displays their information. :contentReference[oaicite:3]{index=3}
-
+This example scans nearby Wi-Fi networks and displays their information. 
 ```cpp
 #include <WiFi.h>
 
@@ -179,7 +177,7 @@ Signal quality example:
 
 # Example 2: Connect to a Wi-Fi Network
 
-This example connects the ESP32 to a wireless router. :contentReference[oaicite:4]{index=4}
+This example connects the ESP32 to a wireless router. 
 
 ```cpp
 #include <WiFi.h>
@@ -261,8 +259,7 @@ Common status values:
 
 # Example 3: Create an ESP32 Hotspot
 
-The ESP32 can create its own Wi-Fi network. :contentReference[oaicite:5]{index=5}
-
+The ESP32 can create its own Wi-Fi network.
 ```cpp
 #include <WiFi.h>
 
@@ -309,7 +306,7 @@ You can now connect a smartphone or laptop directly to the ESP32 hotspot.
 
 # Example 4: Managing Multiple Networks
 
-The ESP32 can automatically connect to the strongest available network using WiFiMulti. :contentReference[oaicite:6]{index=6}
+The ESP32 can automatically connect to the strongest available network using WiFiMulti. 
 
 ```cpp
 #include <WiFi.h>
@@ -444,8 +441,7 @@ After learning Wi-Fi basics, try:
 5. Build a web server
 6. Control LEDs from a browser
 
-These are often recommended as beginner ESP32 networking projects. :contentReference[oaicite:7]{index=7}
-
+These are often recommended as beginner ESP32 networking projects.
 ---
 
 # Summary

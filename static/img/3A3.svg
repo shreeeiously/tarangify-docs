@@ -1,0 +1,61 @@
+<svg width="1160" height="480" viewBox="0 0 580 240" xmlns="http://www.w3.org/2000/svg">
+
+  <desc>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-Arduino-Tutorials/Digital-IO</desc>
+  <metadata>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-Arduino-Tutorials/Digital-IO</metadata>
+  <!-- White background rectangle -->
+  <rect width="100%" height="100%" fill="white"/>
+  <defs>
+    <style>
+      .ideal-line { stroke: #00b894; stroke-width: 3; fill: none; }
+      .bouncing-line { stroke: #e74c3c; stroke-width: 2; fill: none; }
+      .voltage-label { font-size: 12px; fill: #333; font-weight: 500; font-family: Arial, sans-serif; }
+      .time-label { font-size: 10px; fill: #666; font-family: Arial, sans-serif; }
+      .axis-label { font-size: 11px; fill: #666; font-family: Arial, sans-serif; }
+      .legend-text { font-size: 11px; fill: #333; font-family: Arial, sans-serif; }
+      .section-title { font-size: 12px; fill: #333; font-weight: bold; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+  <!-- Top Section: Ideal Signal -->
+  <text x="50" y="20" class="section-title">Ideal Signal (Expected Clean Signal)</text>
+  <!-- Top Section Axes -->
+  <line x1="50" y1="90" x2="550" y2="90" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="30" x2="50" y2="100" stroke="#ddd" stroke-width="1"/>
+  <!-- Top Section Voltage Labels -->
+  <text x="15" y="45" class="voltage-label">HIGH</text>
+  <text x="20" y="95" class="voltage-label">LOW</text>
+  <!-- Top Section Reference Lines -->
+  <line x1="50" y1="40" x2="550" y2="40" stroke="#eee" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="50" y1="90" x2="550" y2="90" stroke="#eee" stroke-width="1" stroke-dasharray="3,3"/>
+  <!-- Ideal Signal Line -->
+  <path d="M 50 40 L 150 40 L 150 90 L 420 90 L 420 40 L 550 40" class="ideal-line"/>
+  <!-- Ideal Signal Annotations -->
+  <text x="100" y="55" class="time-label" text-anchor="middle">Not Pressed</text>
+  <text x="300" y="80" class="time-label" text-anchor="middle">Pressed</text>
+  <text x="510" y="55" class="time-label" text-anchor="middle">Released</text>
+  <!-- Separator Line -->
+  <line x1="30" y1="120" x2="570" y2="120" stroke="#ccc" stroke-width="2"/>
+  <!-- Bottom Section: Actual Signal -->
+  <text x="50" y="140" class="section-title">Actual Signal (With Mechanical Bounce)</text>
+  <!-- Bottom Section Axes -->
+  <line x1="50" y1="220" x2="550" y2="220" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="160" x2="50" y2="230" stroke="#ddd" stroke-width="1"/>
+  <!-- Bottom Section Voltage Labels -->
+  <text x="15" y="175" class="voltage-label">HIGH</text>
+  <text x="20" y="225" class="voltage-label">LOW</text>
+  <!-- Bottom Section Reference Lines -->
+  <line x1="50" y1="170" x2="550" y2="170" stroke="#eee" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="50" y1="220" x2="550" y2="220" stroke="#eee" stroke-width="1" stroke-dasharray="3,3"/>
+  <!-- Actual Bouncing Signal Line -->
+  <path d="M 50 170 L 150 170 L 150 220 L 155 220 L 155 170 L 160 170 L 160 220 L 165 220 L 165 170 L 170 170 L 170 220 L 175 220 L 175 170 L 180 170 L 180 220 L 185 220 L 185 170 L 190 170 L 190 220 L 195 220 L 195 170 L 200 170 L 200 220 L 205 220 L 205 170 L 210 170 L 210 220 L 220 220 L 225 220 L 230 220 L 250 220 L 420 220 L 420 170 L 425 170 L 425 220 L 430 220 L 430 170 L 435 170 L 435 220 L 440 220 L 440 170 L 445 170 L 445 220 L 450 220 L 450 170 L 455 170 L 455 220 L 460 220 L 460 170 L 465 170 L 465 220 L 470 220 L 470 170 L 475 170 L 475 220 L 480 220 L 480 170 L 550 170" class="bouncing-line"/>
+  <!-- Actual Signal Annotations -->
+  <text x="100" y="185" class="time-label" text-anchor="middle">Not Pressed</text>
+  <text x="300" y="210" class="time-label" text-anchor="middle">Pressed</text>
+  <text x="510" y="185" class="time-label" text-anchor="middle">Released</text>
+  <!-- Bounce Area Annotations -->
+  <text x="180" y="155" class="time-label" text-anchor="middle">Bounce on Press</text>
+  <text x="450" y="155" class="time-label" text-anchor="middle">Bounce on Release</text>
+  <!-- Bounce Area Highlight Boxes -->
+  <rect x="145" y="160" width="70" height="70" fill="none" stroke="#ff9999" stroke-width="1" stroke-dasharray="5,5" rx="5"/>
+  <rect x="415" y="160" width="70" height="70" fill="none" stroke="#ff9999" stroke-width="1" stroke-dasharray="5,5" rx="5"/>
+  <!-- Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-Arduino-Tutorials/Digital-IO -->
+</svg>

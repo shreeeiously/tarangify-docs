@@ -20,6 +20,8 @@ Make sure you've completed [**Section 1: Set Up Environment**](./esp-idf-install
 
 ## 1. What Are ESP-IDF Components?
 
+![ESP-IDF](/img/4E1.svg)
+
 ESP-IDF is built around a modular architecture. Rather than one monolithic codebase, functionality like the OS, networking stacks, and peripheral drivers is split into independent, reusable **components**. During a build, each component is compiled into a static library, then linked into the final application alongside your own code.
 
 This modularity means you can mix ESP-IDF's built-in components with your own custom components and with third-party components published by the community â€” combining pieces as needed rather than reinventing them. The main payoffs are clearer separation between pieces of a project, easier code reuse, and simpler long-term maintenance as a project grows.
@@ -157,6 +159,8 @@ void app_main(void)
 
 Set your target, port, and flash method as covered in [Section 2](./run-example#13-configure-target-port-and-flash-method), then run **Build, Flash and Monitor**.
 
+![ESP-IDF](/img/4E2.webp)
+
 - With the button unpressed, the internal pull-up keeps GPIO7 high, so you'll see `Button value: 1`.
 - With the button pressed (pulling the pin to GND), you'll see `Button value: 0`.
 
@@ -194,8 +198,12 @@ Same circuit as the previous example: one button leg to a GPIO pin (GPIO7 in thi
 ```text
 idf.py add-dependency "espressif/button^4.1.5"
 ```
+![ESP-IDF](/img/4E3.webp)
 
 3. Open the ESP-IDF terminal from within VS Code and run that command from your project's root directory. This updates your project's `idf_component.yml` and downloads the component into `managed_components/`.
+
+![ESP-IDF](/img/4E4.webp)
+
 4. Include the component's headers in your code and call its API, as shown below.
 
 ### 6.3 Example Code
@@ -254,6 +262,8 @@ void app_main(void)
 
 Build, flash, and monitor as before.
 
+![ESP-IDF](/img/4E2.webp)
+
 - A single click logs: `I (xxxx) button_example: BUTTON_SINGLE_CLICK`
 - A quick double click logs: `I (xxxx) button_example: BUTTON_DOUBLE_CLICK`
 
@@ -274,6 +284,9 @@ The `espressif/button` component recognizes several event types out of the box â
 You can scaffold a new component two ways:
 
 - **From VS Code:** open the command palette (`Ctrl + Shift + P`) and run **ESP-IDF: Create New ESP-IDF Component**.
+
+![ESP-IDF](/img/4E5.webp)
+
 - **From the command line:**
 
 ```text

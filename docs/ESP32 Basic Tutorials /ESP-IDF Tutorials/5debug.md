@@ -26,6 +26,8 @@ A hardware debugger removes that cycle. With breakpoints, single-stepping, and l
 
 ESP32-series chips support this through the **JTAG** interface, paired with **OpenOCD** and **GDB**. JTAG gives a debug host a direct, low-level connection to the running chip — enough to halt execution, inspect the call stack, watch variables, and step line by line.
 
+![ESP-IDF](/img/5E1.svg)
+
 In practice, the pieces fit together like this: VS Code (via the ESP-IDF extension) drives a GDB client, GDB talks to an OpenOCD server, and OpenOCD talks to the chip itself over JTAG — either the chip's built-in USB-JTAG or an external adapter. ESP-IDF ships its own maintained forks of both tools (`esp-gdb` and `openocd-esp32`) with better support for Espressif chips than the vanilla upstream versions.
 
 ---
@@ -43,6 +45,8 @@ If your board's chip doesn't expose USB-JTAG, you can still debug using an exter
 JTAG communication needs the right USB drivers installed first. You can do this either through Espressif's installation manager GUI or from the command line.
 
 **Espressif Installation Manager (GUI):** open the dashboard from "Manage Installations," then choose "Install Drivers."
+
+![ESP-IDF](/img/5E2.webp)
 
 **PowerShell (Windows, as Administrator):**
 
@@ -78,7 +82,11 @@ void app_main(void)
 }
 ```
 
-Set your target, port, and flash method (see [Section 2](./run-example#13-configure-target-port-and-flash-method)), then build, flash, and monitor. You should see:
+Set your target, port, and flash method (see [Section 2](./run-example#13-configure-target-port-and-flash-method)), then build, flash, and monitor. 
+
+![ESP-IDF](/img/5E3.webp)
+
+You should see:
 
 ```text
 Hello world!
@@ -93,8 +101,22 @@ With that working, you're ready to attach a debugger instead of just reading pri
 
 OpenOCD runs as a server: it connects to your board over the debug adapter (JTAG), then exposes a network interface that GDB (and other clients) can connect to.
 
-1. Open the command palette (`Ctrl + Shift + P`) and run **ESP-IDF: Select OpenOCD Board Configuration**. Choose the built-in USB-JTAG option matching your chip (for example, "ESP32-S3 chip (via builtin USB-JTAG)").
-2. Open the command palette again and run **ESP-IDF: OpenOCD Manager**, then choose **Start OpenOCD**.
+1. Open the command palette (`Ctrl + Shift + P`) and run **ESP-IDF: Select OpenOCD Board Configuration**. 
+
+![ESP-IDF](/img/5E4.webp)
+
+Choose the built-in USB-JTAG option matching your chip (for example, "ESP32-S3 chip (via builtin USB-JTAG)").
+
+![ESP-IDF](/img/5E5.webp)
+
+2. Open the command palette again and run **ESP-IDF: OpenOCD Manager**,
+
+![ESP-IDF](/img/5E6.webp)
+
+ then choose **Start OpenOCD**.
+
+![ESP-IDF](/img/5E7.webp)
+
 3. A successful start prints a log ending with something like:
 
 ```text
@@ -109,9 +131,14 @@ By default, OpenOCD listens on port `4444` for Telnet, `6666` for TCL, and `3333
 ## 5. Start a Debugging Session
 
 1. Set a breakpoint on the `sum += i;` line: click on the line, then press `F9` (or click in the gutter to the left of the line number).
+
+![ESP-IDF](/img/5E8.webp)
+
 2. Press `F5` (or **Run → Start Debugging**) to launch the session.
 
 VS Code will connect GDB to the running OpenOCD server and pause execution at the start of `app_main`. You'll get a **Variables**, **Watch**, **Call Stack**, and **Breakpoints** panel on the side, a **Debug Console** and **Output** panel at the bottom, and a debug toolbar above the editor.
+
+![ESP-IDF](/img/5E9.webp)
 
 ---
 
@@ -119,12 +146,14 @@ VS Code will connect GDB to the running OpenOCD server and pause execution at th
 
 The debug toolbar gives you:
 
-- **Continue** — resume execution until the next breakpoint or program end.
-- **Step Over** — run the current line; if it calls a function, run the whole function without stepping into it.
-- **Step Into** — run the current line, but step inside any function it calls.
-- **Step Out** — finish the current function and pause back in its caller.
-- **Restart** — restart the debug session from the beginning.
-- **Disconnect** — end the debug session entirely.
+![ESP-IDF](/img/5E10.webp)
+
+- ![ESP-IDF](/img/5E101.webp)**Continue** — resume execution until the next breakpoint or program end.
+- ![ESP-IDF](/img/5E102.webp)**Step Over** — run the current line; if it calls a function, run the whole function without stepping into it.
+- ![ESP-IDF](/img/5E103.webp)**Step Into** — run the current line, but step inside any function it calls.
+- ![ESP-IDF](/img/5E104.webp)**Step Out** — finish the current function and pause back in its caller.
+- ![ESP-IDF](/img/5E105.webp)**Restart** — restart the debug session from the beginning.
+- ![ESP-IDF](/img/5E106.webp)**Disconnect** — end the debug session entirely.
 
 A quick walkthrough using the example above:
 

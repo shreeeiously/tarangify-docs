@@ -6,7 +6,7 @@ description: Learn how to use UART serial communication on ESP32 for debugging a
 
 # Section 6: UART Communication
 
-UART (Universal Asynchronous Receiver/Transmitter) is one of the most widely used communication interfaces in embedded systems. It allows two devices to exchange data using only two signal lines: TX (Transmit) and RX (Receive). UART is commonly used for debugging, communication with sensors and modules, and data exchange between microcontrollers. :contentReference[oaicite:0]{index=0}
+UART (Universal Asynchronous Receiver/Transmitter) is one of the most widely used communication interfaces in embedded systems. It allows two devices to exchange data using only two signal lines: TX (Transmit) and RX (Receive). UART is commonly used for debugging, communication with sensors and modules, and data exchange between microcontrollers. 
 
 In this tutorial, you will learn:
 
@@ -26,8 +26,18 @@ UART stands for:
 ```text
 Universal Asynchronous Receiver/Transmitter
 ```
+UART is **asynchronous** communication, meaning it has no shared clock lines. To ensure correct data transmission and reception, they agree to use the same **baud rate** and **data frame format**.
 
-UART is an asynchronous serial communication protocol, meaning that devices do not share a clock signal. Instead, both devices agree on the same communication speed (baud rate). :contentReference[oaicite:1]{index=1}
+**Baud Rate** refers to the number of bits transmitted per second (bps, bits per second). The communicating parties must use the same baud rate to correctly transmit data. The common baud rates are 9600 and 115200.
+
+Each **UART data frame** consists of the following parts:
+
+- **Start Bit** : 1 bit, always 0, indicating the start of data transmission
+- **Data Bits** : Typically 5-9 bits, commonly 8 bits, containing the actual data to be transmitted
+- **Parity Bit** : Optional, used for error detection
+- **Stop Bits** : 1-2 bits, always 1, indicating the end of data transmission
+
+![Arduino IDE](/img/6A1.svg)
 
 ---
 
@@ -41,15 +51,11 @@ UART requires three connections:
 | RX | Receive Data |
 | GND | Common Ground |
 
-Connection rule:
+**Connection Method**: There needs to be a cross-connection between the two devices, i.e., the TX of Device A connects to the RX of Device B, and the RX of Device A connects to the TX of Device B. Furthermore, a common ground (GND) connection is required between the two devices to establish a stable reference for signal voltages.
 
-```text
-Device A TX → Device B RX
-Device A RX → Device B TX
-Device A GND → Device B GND
-```
+![Arduino IDE](/img/6A2.svg)
 
-The TX and RX lines must always be crossed between devices. :contentReference[oaicite:2]{index=2}
+The TX and RX lines must always be crossed between devices. 
 
 ---
 
@@ -63,7 +69,7 @@ UART communication provides:
 - Simple Wiring
 - Reliable Short-Distance Communication
 
-UART can send and receive data simultaneously. :contentReference[oaicite:3]{index=3}
+UART can send and receive data simultaneously. 
 
 ---
 
@@ -86,6 +92,7 @@ Example:
 ```text
 115200 baud
 ```
+![Arduino IDE](/img/6A3.webp)
 
 means approximately:
 
@@ -93,7 +100,7 @@ means approximately:
 115200 bits per second
 ```
 
-Both devices must use the same baud rate for proper communication. :contentReference[oaicite:4]{index=4}
+Both devices must use the same baud rate for proper communication. 
 
 ---
 
@@ -122,11 +129,11 @@ Often written as:
 8N1
 ```
 
-This is the default UART configuration used in most Arduino projects. :contentReference[oaicite:5]{index=5}
+This is the default UART configuration used in most Arduino projects. :contentReference
 
 ---
 
-# UART on ESP32
+# UART in ESP32
 
 ESP32 contains multiple hardware UART controllers.
 
@@ -144,7 +151,7 @@ The default `Serial` interface is typically used for:
 - Debug Messages
 - Program Status Information
 
-Additional UART ports can communicate with external devices without affecting debugging. :contentReference[oaicite:6]{index=6}
+Additional UART ports can communicate with external devices without affecting debugging. 
 
 ---
 
@@ -353,7 +360,7 @@ ESP32 A RX → ESP32 B TX
 ESP32 A GND → ESP32 B GND
 ```
 
-This arrangement allows data exchange between the two boards. :contentReference[oaicite:7]{index=7}
+This arrangement allows data exchange between the two boards. 
 
 ---
 

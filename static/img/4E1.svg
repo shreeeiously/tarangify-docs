@@ -1,0 +1,112 @@
+<svg width="920" height="590" viewBox="0 0 920 590" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+
+  <desc>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/Component</desc>
+  <metadata>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/Component</metadata>
+    <defs>
+        <style>
+            .base-text {
+                font-family: 'Noto Sans SC', sans-serif;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+
+            .title-text {
+                font-size: 26px;
+                font-weight: 600;
+            }
+            .component-text {
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .item-text {
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .etc-text {
+                font-size: 18px;
+                font-weight: 400;
+                fill: #666;
+            }
+
+            .container-grey { fill: #f0f0f0; stroke: #a9a9a9; stroke-width: 1.5; }
+            .container-green { fill: #e6ffed; stroke: #a9a9a9; stroke-width: 1.5; }
+            .block-white { fill: #ffffff; stroke: #a9a9a9; stroke-width: 1.5; }
+            .block-yellow { fill: #fffde7; stroke: #a9a9a9; stroke-width: 1.5; }
+            .block-orange { fill: #fff3e0; stroke: #a9a9a9; stroke-width: 1.5; }
+            .block-blue { fill: #e3f2fd; stroke: #a9a9a9; stroke-width: 1.5; }
+        </style>
+    </defs>
+
+    <!-- White background layer -->
+    <rect width="100%" height="100%" fill="white" />
+
+    <!-- ESP-IDF Module -->
+    <g id="esp-idf" transform="translate(50, 20)">
+        <rect x="0" y="0" width="280" height="550" rx="8" ry="8" class="container-grey" />
+        <text x="140" y="45" class="base-text title-text">ESP-IDF</text>
+
+        <rect x="20" y="80" width="240" height="340" rx="8" ry="8" class="container-green" />
+        <text x="140" y="105" class="base-text component-text">Components</text>
+        
+        <rect x="40" y="135" width="200" height="45" rx="5" ry="5" class="block-white" />
+        <text x="140" y="157.5" class="base-text item-text">FreeRTOS</text>
+
+        <rect x="40" y="190" width="200" height="45" rx="5" ry="5" class="block-white" />
+        <text x="140" y="212.5" class="base-text item-text">Wi-Fi Stack</text>
+
+        <rect x="40" y="245" width="200" height="45" rx="5" ry="5" class="block-white" />
+        <text x="140" y="267.5" class="base-text item-text">LwIP</text>
+
+        <rect x="40" y="300" width="200" height="45" rx="5" ry="5" class="block-white" />
+        <text x="140" y="322.5" class="base-text item-text">Drivers</text>
+
+        <text x="140" y="380" class="base-text etc-text">(etc.)</text>
+
+        <rect x="20" y="430" width="240" height="50" rx="8" ry="8" class="block-yellow" />
+        <text x="140" y="455" class="base-text item-text">Build System</text>
+
+        <rect x="20" y="490" width="240" height="50" rx="8" ry="8" class="block-orange" />
+        <text x="140" y="515" class="base-text item-text">Tools</text>
+    </g>
+
+    <!-- Third-party Components Module -->
+    <g id="third-party" transform="translate(350, 100)">
+        <rect x="0" y="0" width="220" height="245" rx="8" ry="8" class="container-green" />
+        <text x="110" y="30" class="base-text component-text">Third-Party</text>
+        <text x="110" y="55" class="base-text component-text">Components</text>
+
+        <rect x="20" y="75" width="180" height="45" rx="5" ry="5" class="block-white" />
+        <text x="110" y="97.5" class="base-text item-text">Cloud</text>
+
+        <rect x="20" y="125" width="180" height="45" rx="5" ry="5" class="block-white" />
+        <text x="110" y="147.5" class="base-text item-text">Drivers</text>
+
+        <rect x="20" y="175" width="180" height="45" rx="5" ry="5" class="block-white" />
+        <text x="110" y="197.5" class="base-text item-text">Protocols</text>
+    </g>
+
+    <!-- Application Module -->
+    <g id="application" transform="translate(590, 20)">
+        <rect x="0" y="0" width="280" height="460" rx="8" ry="8" class="container-grey" />
+        <text x="140" y="45" class="base-text title-text">Application</text>
+
+        <rect x="20" y="80" width="240" height="220" rx="8" ry="8" class="container-green" />
+        <text x="140" y="105" class="base-text component-text">Components</text>
+
+        <rect x="40" y="135" width="200" height="45" rx="5" ry="5" class="block-white" />
+        <text x="140" y="157.5" class="base-text item-text">Business Logic</text>
+
+        <rect x="40" y="190" width="200" height="45" rx="5" ry="5" class="block-white" />
+        <text x="140" y="212.5" class="base-text item-text">Glue Code</text>
+
+        <rect x="40" y="245" width="200" height="45" rx="5" ry="5" class="block-white" />
+        <text x="140" y="267.5" class="base-text item-text">Drivers</text>
+
+        <rect x="20" y="310" width="240" height="50" rx="8" ry="8" class="block-yellow" />
+        <text x="140" y="335" class="base-text item-text">Makefiles</text>
+
+        <rect x="20" y="370" width="240" height="50" rx="8" ry="8" class="block-blue" />
+        <text x="140" y="395" class="base-text item-text">Configuration</text>
+    </g>
+  <!-- Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/Component -->
+</svg>

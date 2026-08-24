@@ -1,0 +1,55 @@
+<svg width="1400" height="680" viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+
+  <desc>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/Debug</desc>
+  <metadata>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/Debug</metadata>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+
+  <!-- PC Box -->
+  <rect x="50" y="20" width="330" height="300" rx="20" ry="20" fill="rgba(209,221,233,0.233)"/>
+  <text x="220" y="305" font-family="Arial, sans-serif" font-size="16" fill="#90A4AE" font-weight="bold" text-anchor="middle">PC</text>
+
+  <!-- IDE Box -->
+  <rect x="70" y="40" width="140" height="240" rx="15" ry="15" fill="#B0BEC5"/>
+  <text x="140" y="265" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold" text-anchor="middle">IDE</text>
+
+  <!-- ESP gdb Box -->
+  <rect x="85" y="70" width="110" height="50" rx="10" ry="10" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="140" y="100" font-family="Arial, sans-serif" font-size="16" fill="#37474F" font-weight="bold" text-anchor="middle">ESP gdb</text>
+
+  <!-- idf.py Box -->
+  <rect x="85" y="190" width="110" height="50" rx="10" ry="10" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="140" y="220" font-family="Arial, sans-serif" font-size="16" fill="#37474F" font-weight="bold" text-anchor="middle">idf.py</text>
+
+  <!-- OpenOCD Box -->
+  <rect x="240" y="70" width="120" height="50" rx="10" ry="10" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="300" y="100" font-family="Arial, sans-serif" font-size="16" fill="#37474F" font-weight="bold" text-anchor="middle">OpenOCD</text>
+
+  <!-- esptool.py Box -->
+  <rect x="240" y="190" width="120" height="50" rx="10" ry="10" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="300" y="220" font-family="Arial, sans-serif" font-size="16" fill="#37474F" font-weight="bold" text-anchor="middle">esptool.py</text>
+
+  <!-- ESP32 Box -->
+  <rect x="550" y="115" width="100" height="80" rx="15" ry="15" fill="#546E7A"/>
+  <text x="600" y="160" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF" font-weight="bold" text-anchor="middle">ESP32</text>
+
+  <!-- Connecting Lines -->
+  <path d="M195 95 H 240" stroke="#78909C" stroke-width="2" fill="none"/>
+  <path d="M195 215 H 240" stroke="#78909C" stroke-width="2" fill="none"/>
+  <!-- Merged line path, adjusted to new center -->
+  <path d="M360 95 H 400 V 155 H 520" stroke="#78909C" stroke-width="2" fill="none"/>
+  <path d="M360 215 H 400 V 155" stroke="#78909C" stroke-width="2" fill="none"/>
+
+  <!-- USB-Serial-JTAG Text -->
+  <text x="460" y="175" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE" font-weight="bold" text-anchor="middle">USB-Serial-JTAG</text>
+
+  <!-- D+/D- Lines and Text -->
+  <!-- D+ Line -->
+  <path d="M520 155 V 135 H 550" stroke="#78909C" stroke-width="2" fill="none"/>
+  <text x="525" y="130" font-family="Arial, sans-serif" font-size="12" fill="#78909C">D+</text>
+  <!-- D- Line -->
+  <path d="M520 155 V 175 H 550" stroke="#78909C" stroke-width="2" fill="none"/>
+  <text x="525" y="190" font-family="Arial, sans-serif" font-size="12" fill="#78909C">D-</text>
+  <!-- Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/Debug -->
+</svg>

@@ -6,7 +6,7 @@ description: Learn how to use Bluetooth Low Energy (BLE) on ESP32 for wireless c
 
 # Section 11: Bluetooth Communication
 
-The ESP32 includes built-in Bluetooth functionality, making it ideal for wireless communication projects. Bluetooth enables devices to exchange data without requiring Wi-Fi or an Internet connection. It is commonly used in wearable devices, wireless sensors, mobile applications, smart home systems, and IoT products. :contentReference[oaicite:0]{index=0}
+The ESP32 includes built-in Bluetooth functionality, making it ideal for wireless communication projects. Bluetooth enables devices to exchange data without requiring Wi-Fi or an Internet connection. It is commonly used in wearable devices, wireless sensors, mobile applications, smart home systems, and IoT products. 
 
 In this tutorial, you will learn:
 
@@ -33,8 +33,7 @@ Examples include:
 - ESP32 Development Boards
 - Medical Devices
 
-Bluetooth eliminates the need for cables while consuming very little power. :contentReference[oaicite:1]{index=1}
-
+Bluetooth eliminates the need for cables while consuming very little power. 
 ---
 
 # Bluetooth Types
@@ -63,8 +62,7 @@ BLE is optimized for:
 - IoT Devices
 - Wearable Electronics
 
-BLE is the preferred choice for most modern ESP32 IoT applications. :contentReference[oaicite:2]{index=2}
-
+BLE is the preferred choice for most modern ESP32 IoT applications. 
 ---
 
 # Why Use BLE?
@@ -98,14 +96,22 @@ GAP stands for:
 ```text
 Generic Access Profile
 ```
+GAP is responsible for managing device connections and broadcasting, and it defines the roles devices play in Bluetooth communication.
 
-GAP handles:
+GAP defines two primary roles:
+- **Peripheral device** : Typically a device that holds data, such as a sensor. It announces its presence through Advertising and waits to be connected. In the examples, the ESP32 will primarily play this role.
+- **Central device** : Usually a more powerful device, such as a smartphone or computer. It discovers peripheral devices through Scanning and initiates connections.
 
-- Advertising
-- Device Discovery
-- Connection Management
+![Arduino IDE](/img/11A1.svg)
 
-Simply put, GAP helps devices find and connect to each other. :contentReference[oaicite:3]{index=3}
+
+GAP facilitates interaction between devices through the following processes:
+
+- **Advertising** : Peripheral devices periodically send advertising packets containing information such as the device name and service UUIDs, allowing central devices to discover them.
+- **Scanning** : Central devices listen on advertising channels, receive, and parse advertising packets from peripheral devices.
+- **Connecting** : The central device sends a connection request to its chosen peripheral device. Once the peripheral accepts, a one-to-one connection is established between the two.
+
+Simply put, GAP helps devices find and connect to each other. 
 
 ---
 
@@ -116,14 +122,33 @@ GATT stands for:
 ```text
 Generic Attribute Profile
 ```
+GATT (Generic Attribute Profile) becomes effective after devices establish a connection. It defines the framework and format for data exchange. GATT is based on a Client-Server architecture. These two roles typically directly correspond to the GAP roles:
 
-GATT defines:
+- **GATT Server** : This is the device that holds the data (usually corresponding to the Peripheral in GAP). It stores and provides the data.
+- **GATT Client** : This is the device that accesses the data (usually corresponding to the Central in GAP). It sends read/write requests to the server.
 
-- Services
-- Characteristics
-- Data Exchange Rules
+The data in GATT is organized in a standardized hierarchical structure:
+![Arduino IDE](/img/11A2.svg)
 
-Once devices are connected, GATT manages the actual data transfer. :contentReference[oaicite:4]{index=4}
+
+- **Service** : A Service is a logical collection of multiple related "Characteristics", representing a specific function of the device. Each service is identified by a unique UUID. For example, a "Battery Service" might contain a "Battery Level" characteristic.
+
+- **Characteristic** : A Characteristic is the fundamental unit for data exchange, encapsulating a specific data value. A complete characteristic contains:
+
+  - **Value** : The actual stored data.
+  - **Properties** : Define the operations a client can perform on the "Value". Common ones include:
+    - *Read* : Allows the client to read the value.
+    - *Write* : Allows the client to write a value.
+    - *Notify* : Allows the server to actively send the new value to the client whenever it changes.
+    - *Indicate* : Similar to Notify, but requires the client to acknowledge receipt.
+  - **Declaration** : Contains the characteristic's properties, UUID, and its position within the service.
+
+      
+- **Descriptor** : A descriptor is optional and provides additional metadata for a characteristic. For instance, it can be used to provide a human-readable description (e.g., "Temperature Measurement"), specify the unit of the value (e.g., "Celsius"), or define a valid range of values.
+
+- **UUID (Universally Unique Identifier)** :A UUID is a 128-bit number used to uniquely identify a service, characteristic, or descriptor. For convenience, the Bluetooth Special Interest Group (SIG) has predefined a set of official short UUIDs (usually 16-bit) for common functions, such as 0x180F for the Battery Service. When developing custom applications, a randomly generated full 128-bit UUID should be used to ensure global uniqueness. All assigned standard UUIDs can be queried on the [SIG official website](https://bitbucket.org/bluetooth-SIG/public/src/main/assigned_numbers/uuids/).
+
+Once devices are connected, GATT manages the actual data transfer.
 
 ---
 
@@ -235,7 +260,7 @@ The ESP32 is now ready for BLE communication.
 
 # Example 2: Send Data Using BLE
 
-This example publishes sensor data through a BLE Characteristic.
+This example configures the ESP32 as a peripheral device to read the analog value from a potentiometer and publish it through a BLE Characteristic. A smartphone app (such as LightBlue) can be used as a central device to connect to the ESP32 and read the value of this characteristic.
 
 ```cpp
 #include <BLEDevice.h>
@@ -306,7 +331,7 @@ Output:
 Hello BLE
 ```
 
-BLE scanner applications are commonly used for testing ESP32 BLE projects. :contentReference[oaicite:5]{index=5}
+BLE scanner applications are commonly used for testing ESP32 BLE projects.
 
 ---
 
@@ -414,7 +439,7 @@ BLE is commonly used in:
 - Wireless Data Logging
 - Home Automation
 
-BLE has become one of the most widely used wireless technologies in IoT and wearable products because of its low power requirements. :contentReference[oaicite:6]{index=6}
+BLE has become one of the most widely used wireless technologies in IoT and wearable products because of its low power requirements. 
 
 ---
 

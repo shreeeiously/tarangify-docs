@@ -1,0 +1,73 @@
+<svg width="1160" height="220" viewBox="0 0 580 110" xmlns="http://www.w3.org/2000/svg">
+
+  <desc>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-Arduino-Tutorials/Digital-IO</desc>
+  <metadata>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-Arduino-Tutorials/Digital-IO</metadata>
+
+  <!-- White background rectangle -->
+  <rect width="100%" height="100%" fill="white" />
+  <defs>
+    <style>
+      .ideal-line {
+        stroke: #00b894;
+        stroke-width: 3;
+        fill: none;
+      }
+
+      .bouncing-line {
+        stroke: #e74c3c;
+        stroke-width: 2;
+        fill: none;
+      }
+
+      .voltage-label {
+        font-size: 12px;
+        fill: #333;
+        font-weight: 500;
+        font-family: Arial, sans-serif;
+      }
+
+      .time-label {
+        font-size: 10px;
+        fill: #666;
+        font-family: Arial, sans-serif;
+      }
+
+      .axis-label {
+        font-size: 11px;
+        fill: #666;
+        font-family: Arial, sans-serif;
+      }
+
+      .legend-text {
+        font-size: 11px;
+        fill: #333;
+        font-family: Arial, sans-serif;
+      }
+
+      .section-title {
+        font-size: 12px;
+        fill: #333;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </defs>
+  <!-- Top section: Ideal signal -->
+  <text x="50" y="20" class="section-title">Ideal circuit signal when the button is pressed</text>
+  <!-- Top axes -->
+  <line x1="50" y1="90" x2="550" y2="90" stroke="#ddd" stroke-width="1" />
+  <line x1="50" y1="30" x2="50" y2="100" stroke="#ddd" stroke-width="1" />
+  <!-- Top voltage labels -->
+  <text x="15" y="45" class="voltage-label">HIGH</text>
+  <text x="20" y="95" class="voltage-label">LOW</text>
+  <!-- Top reference lines -->
+  <line x1="50" y1="40" x2="550" y2="40" stroke="#eee" stroke-width="1" stroke-dasharray="3,3" />
+  <line x1="50" y1="90" x2="550" y2="90" stroke="#eee" stroke-width="1" stroke-dasharray="3,3" />
+  <!-- Ideal signal line -->
+  <path d="M 50 40 L 170 40 L 170 90 L 450 90 L 450 40 L 550 40" class="ideal-line" />
+  <!-- Ideal signal annotations -->
+  <text x="100" y="55" class="time-label" text-anchor="middle">Not Pressed</text>
+  <text x="300" y="80" class="time-label" text-anchor="middle">Pressed</text>
+  <text x="500" y="55" class="time-label" text-anchor="middle">Released</text>
+  <!-- Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-Arduino-Tutorials/Digital-IO -->
+</svg>

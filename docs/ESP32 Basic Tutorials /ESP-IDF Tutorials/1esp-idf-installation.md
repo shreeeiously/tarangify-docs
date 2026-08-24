@@ -52,6 +52,8 @@ For more information about ESP-IDF versions and compatibility, refer to the offi
 
 ESP-IDF provides the software libraries, APIs, build tools, compiler, flashing utilities, debugging tools, and configuration system required to develop applications for ESP32 devices.
 
+![ESP-IDF](/img/1E1.webp)
+
 It supports a wide range of Espressif chips, including:
 
 - ESP32
@@ -141,6 +143,8 @@ ESP-IDF includes features useful for commercial and connected products, includin
 
 There are several ways to work with ESP-IDF.
 
+![ESP-IDF](/img/1E2.webp)
+
 ### Command-Line Tools
 
 ESP-IDF provides command-line tools that allow you to create, configure, build, flash, and monitor projects.
@@ -176,6 +180,8 @@ For this tutorial, an **ESP32-S3 development board** is recommended.
 ### Step 1: Install ESP-IDF
 
 Download and install ESP-IDF and its required tools from Espressif's official documentation.
+
+![ESP-IDF](/img/1E3.webp)
 
 [ESP-IDF Get Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/)
 
@@ -257,6 +263,7 @@ Search for:
 ```text
 ESP-IDF
 ```
+![ESP-IDF](/img/1E4.webp)
 
 Install the **Espressif IDF** extension.
 
@@ -304,13 +311,15 @@ Once an ESP-IDF project is opened in Visual Studio Code, the ESP-IDF extension p
 
 The bottom toolbar provides quick access to common development operations.
 
-### ESP-IDF Version
+![ESP-IDF](/img/1E5.webp)
 
-Select or view the ESP-IDF version being used by the project.
+### 1. ESP-IDF Version
 
-### Flash Method
+Displays and switches the ESP-IDF version used by the current project.
 
-Select the interface used to program the ESP32.
+### 2. Flash Method
+
+Select the flashing interface used to program the ESP32.
 
 Depending on the hardware, this may include:
 
@@ -318,7 +327,7 @@ Depending on the hardware, this may include:
 * JTAG
 * DFU
 
-### Select Port
+### 3. Select Port
 
 Select the serial port connected to your ESP32 development board.
 
@@ -334,7 +343,7 @@ or:
 /dev/ttyACM0
 ```
 
-### Set Target
+### 4. Set Espressif Device Target
 
 Select the ESP32 chip used by the project.
 
@@ -350,9 +359,9 @@ This is equivalent to:
 idf.py set-target esp32s3
 ```
 
-### SDK Configuration
+### 5. SDK Configuration Editor
 
-Open the ESP-IDF configuration interface.
+ Opens the graphical UI for ESP-IDF project settings.
 
 This is equivalent to:
 
@@ -360,11 +369,14 @@ This is equivalent to:
 idf.py menuconfig
 ```
 
-### Full Clean
+### 6. Full Clean
 
 Removes the project's build output so that the project can be rebuilt from a clean state.
 
-### Build
+(Deletes the build directory of the current ESP-IDF project.)
+
+
+### 7. Build Project
 
 Compiles the ESP-IDF project.
 
@@ -374,9 +386,11 @@ Equivalent command:
 idf.py build
 ```
 
-### Flash
+###  8.Flash Device 
 
-Uploads the compiled firmware to the ESP32.
+Flashes the compiled binary from the current project to the target device. 
+
+(Uploads the compiled firmware to the ESP32.)
 
 Equivalent command:
 
@@ -384,29 +398,39 @@ Equivalent command:
 idf.py flash
 ```
 
-### Monitor
+### 9. Monitor Device
 
-Opens the serial monitor.
+Starts serial communication between the computer and the Espressif device.
+
+(Opens the serial monitor.)
 
 Equivalent command:
 
 ```bash
 idf.py monitor
 ```
+### 10. Debug 
 
-### Build, Flash and Monitor
+ Launches the debugger.
+ 
+### 11. Build, Flash and Monitor
 
 This combines the common workflow:
 
 ```bash
 idf.py build flash monitor
 ```
+### 12. Open ESP-IDF Terminal
+
+Opens a terminal with **IDF_PATH** and the Python virtual environment activated.
 
 ---
 
 ## 5. Install the C/C++ Extension
 
 The Microsoft C/C++ extension is recommended when developing ESP-IDF applications.
+
+![ESP-IDF](/img/1E6.webp)
 
 It provides features such as:
 
