@@ -1,0 +1,54 @@
+<svg width="1400" height="880"  viewBox="0 20 700 440" xmlns="http://www.w3.org/2000/svg">
+
+  <desc>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-MicroPython-Tutorials/Bluetooth-Communication</desc>
+  <metadata>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-MicroPython-Tutorials/Bluetooth-Communication</metadata>
+  <!-- Background -->
+  <rect width="700" height="600" fill="#f8f9fa"/>
+  <!-- Title -->
+  <!-- <text x="350" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#343a40">GATT Data Hierarchy</text> -->
+  <!-- Profile Layer -->
+  <rect x="50" y="50" width="600" height="350" rx="8" fill="none" stroke="#495057" stroke-width="2"/>
+  <text x="70" y="75" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#495057">Profile</text>
+  <text x="70" y="90" font-family="Arial, sans-serif" font-size="11" fill="#6c757d">Example: Health Thermometer Profile</text>
+  <!-- Service 1: Health Thermometer Service -->
+  <rect x="80" y="110" width="250" height="270" rx="6" fill="#f1f3f4" stroke="#6c757d" stroke-width="1.5"/>
+  <text x="90" y="130" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#343a40">Service 1</text>
+  <text x="90" y="145" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Health Thermometer Service</text>
+  <text x="90" y="158" font-family="Arial, sans-serif" font-size="9" fill="#868e96">UUID: 0x1809</text>
+  <!-- Characteristic 1.1: Temperature Measurement -->
+  <rect x="95" y="170" width="220" height="80" rx="4" fill="#e9ecef" stroke="#6c757d" stroke-width="1"/>
+  <text x="105" y="185" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#343a40">Characteristic</text>
+  <text x="105" y="198" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Temperature Measurement</text>
+  <text x="105" y="211" font-family="Arial, sans-serif" font-size="9" fill="#868e96">UUID: 0x2A1C</text>
+  <text x="105" y="226" font-family="Arial, sans-serif" font-size="9" fill="#868e96">Properties: Read, Notify</text>
+  <text x="105" y="239" font-family="Arial, sans-serif" font-size="9" fill="#868e96">Value: 36.5°C</text>
+  <!-- Characteristic 1.2: Temperature Type -->
+  <rect x="95" y="260" width="220" height="60" rx="4" fill="#e9ecef" stroke="#6c757d" stroke-width="1"/>
+  <text x="105" y="275" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#343a40">Characteristic</text>
+  <text x="105" y="288" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Temperature Type (Location)</text>
+  <text x="105" y="301" font-family="Arial, sans-serif" font-size="9" fill="#868e96">UUID: 0x2A1D</text>
+  <text x="105" y="314" font-family="Arial, sans-serif" font-size="9" fill="#868e96">Properties: Read</text>
+  <!-- Service 2: Battery Service -->
+  <rect x="370" y="110" width="250" height="180" rx="6" fill="#f1f3f4" stroke="#6c757d" stroke-width="1.5"/>
+  <text x="380" y="130" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#343a40">Service 2</text>
+  <text x="380" y="145" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Battery Service</text>
+  <text x="380" y="158" font-family="Arial, sans-serif" font-size="9" fill="#868e96">UUID: 0x180F</text>
+  <!-- Characteristic 2.1: Battery Level -->
+  <rect x="385" y="170" width="220" height="80" rx="4" fill="#e9ecef" stroke="#6c757d" stroke-width="1"/>
+  <text x="395" y="185" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#343a40">Characteristic</text>
+  <text x="395" y="198" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Battery Level</text>
+  <text x="395" y="211" font-family="Arial, sans-serif" font-size="9" fill="#868e96">UUID: 0x2A19</text>
+  <text x="395" y="226" font-family="Arial, sans-serif" font-size="9" fill="#868e96">Properties: Read, Notify</text>
+  <text x="395" y="239" font-family="Arial, sans-serif" font-size="9" fill="#868e96">Value: 85%</text>
+  <!-- Service 3: Custom Service -->
+  <rect x="370" y="310" width="250" height="80" rx="6" fill="#f1f3f4" stroke="#6c757d" stroke-width="1.5"/>
+  <text x="380" y="330" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#343a40">Service 3</text>
+  <text x="380" y="345" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Custom Service</text>
+  <text x="380" y="358" font-family="Arial, sans-serif" font-size="9" fill="#868e96">UUID: 123e4567-e89b-12d3-a456-426614174000</text>
+  <text x="380" y="373" font-family="Arial, sans-serif" font-size="9" fill="#6c757d">Contains custom characteristics...</text>
+  <!-- Legend -->
+  <rect x="50" y="410" width="600" height="30" rx="4" fill="#e9ecef" stroke="#6c757d" stroke-width="1"/>
+  <text x="60" y="425" font-family="Arial, sans-serif" font-size="10" fill="#495057">Hierarchy: A Profile can contain multiple Services; each Service can contain multiple Characteristics.</text>
+  <text x="60" y="435" font-family="Arial, sans-serif" font-size="9" fill="#6c757d">Each level has a unique UUID identifier.</text>
+  <!-- Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-MicroPython-Tutorials/Bluetooth-Communication -->
+</svg>

@@ -24,6 +24,8 @@ Make sure you've completed [**Section 1: Set Up Development Environment**](./mic
 
 Rather than truly varying voltage smoothly, a PWM signal stays a simple HIGH/LOW digital signal — it just switches between the two very rapidly, and controls the *proportion* of time spent HIGH versus LOW within each cycle. To anything downstream that can't react as fast as the switching (an LED, a motor, your eye), the effect looks like a genuinely variable voltage.
 
+![ESP-IDF](/img/5M1.webp)
+
 Two parameters define a PWM signal:
 
 - **Duty cycle** — the percentage of each cycle spent HIGH. This is what determines the effective average voltage:

@@ -22,6 +22,8 @@ Make sure you've completed [**Section 1: Set Up Development Environment**](./mic
 
 MicroPython's built-in `socket` module is the most direct way to build a web server — no extra libraries to install, and it forces you to actually see how HTTP works under the hood rather than hiding it behind a framework. (Higher-level options like Microdot exist too, but `socket` is the better starting point for understanding the fundamentals.)
 
+![ESP-IDF](/img/10M1.svg)
+
 Any HTTP server built this way follows the same basic sequence:
 
 1. **Create a socket** — the underlying network communication endpoint.
@@ -113,6 +115,10 @@ while True:
 ### 2.3 Try It
 
 Update `SSID` and `PASSWORD`, run the script, and note the IP address printed in Thonny's Shell. Enter that IP in a browser on the same network, and you should see the "Hello World!" page.
+
+![ESP-IDF](/img/10M2.webp)
+
+![ESP-IDF](/img/10M3.webp)
 
 ---
 
@@ -221,6 +227,10 @@ while True:
 
 Load the ESP32's IP address in a browser. You'll see the current LED state and a link to flip it — clicking it toggles the LED and reloads the page showing the new state.
 
+![ESP-IDF](/img/10M4.webp)
+
+![ESP-IDF](/img/10M5.webp)
+
 ---
 
 ## 4. Example 3: Controlling an LED From a Web Page (AP Mode)
@@ -316,6 +326,9 @@ Everything's the same as Example 2 except the network setup: `network.WLAN(netwo
 
 Run the script, then connect a phone or laptop to the ESP32's own Wi-Fi network (matching the `SSID`/`PASSWORD` you set). Once connected, browse to `192.168.4.1` — you'll see the same LED control page as before, now served entirely from the board itself with no router involved.
 
+![ESP-IDF](/img/10M6.webp)
+
+![ESP-IDF](/img/10M7.webp)
 ---
 
 ## 5. Reference Links

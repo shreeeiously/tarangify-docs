@@ -30,6 +30,8 @@ Key characteristics:
 - **Fast** — commonly tens of MHz, well beyond typical I2C or UART speeds.
 - **Synchronous** — the controller supplies the clock, same idea as I2C but with dedicated lines for each direction.
 
+![ESP-IDF](/img/8M1.svg)
+
 The four signal lines:
 
 - **SCK** (Serial Clock) — the timing signal, driven by the controller.
@@ -73,6 +75,8 @@ Like I2C, SPI signals can be routed to nearly any GPIO pin thanks to the GPIO Ma
 
 - **Default (IO MUX) pins** — up to roughly 80MHz.
 - **Custom (GPIO Matrix) pins** — typically capped around 40MHz, which is still plenty for most peripherals like displays and SD cards.
+
+![ESP-IDF](/img/8M2.webp)
 
 Default pins for common chips:
 

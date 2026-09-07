@@ -85,6 +85,10 @@ while True:
   - `RSSI` is signal strength in dBm — negative, with values closer to `0` meaning a stronger signal.
   - `security` is a numeric code, which `get_security_name()` translates into something readable.
 
+After running the code, the Shell will display a list of available Wi-Fi networks detected. The output will be similar to:
+
+  ![ESP-IDF](/img/9M1.webp)
+
 :::tip
 
 A soft reset generally doesn't reset the Wi-Fi radio's internal state. If you need Wi-Fi to fully reinitialize, either explicitly call `wlan.active(False)` first, or do a full hard reset.
@@ -125,6 +129,8 @@ print("IP config:", wlan.ifconfig())
 
 Update `SSID` and `PASSWORD` to match your actual network, run it, and you should see connection progress dots followed by the assigned IP address once connected.
 
+![ESP-IDF](/img/9M2.webp)
+
 ---
 
 ## 3. Example 3: Creating a Hotspot (AP Mode)
@@ -149,6 +155,8 @@ print("AP started")
 **How it works:** `network.WLAN(network.AP_IF)` creates the interface in Access Point mode instead of Station mode. `ap.config(essid=..., password=...)` sets the hotspot's broadcast name and password — note the password must be at least 8 characters, a WPA2 requirement.
 
 Run this and the board broadcasts its own network, printing the AP's IP address (the address other devices will reach it at once connected).
+
+![ESP-IDF](/img/9M3.webp)
 
 ---
 

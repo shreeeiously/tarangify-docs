@@ -42,6 +42,8 @@ The bus needs just:
 - **SCL** — carries the clock signal, driven by the controller
 - **GND** — shared ground, same as any other digital interface
 
+![ESP-IDF](/img/7M1.svg)
+
 :::info
 
 **Why pull-up resistors matter here:** I2C lines are open-drain — a device can only pull the line low, never actively drive it high. Pull-up resistors are what let the line return to HIGH when nothing's pulling it down, and without them the bus won't communicate reliably at all.
@@ -70,6 +72,8 @@ Before you can talk to a new I2C device, you need to know its address — and pl
 ### 3.1 Wire It Up
 
 You'll need an I2C-capable module (this tutorial uses an SSD1327-based OLED display as the running example) plus, if the module doesn't already include them, two 4.7kΩ pull-up resistors.
+
+![ESP-IDF](/img/7M2.webp)
 
 | Board pin | Module pin | Note |
 |---|---|---|

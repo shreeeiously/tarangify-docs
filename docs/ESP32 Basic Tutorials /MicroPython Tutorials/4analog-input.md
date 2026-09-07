@@ -22,7 +22,9 @@ Make sure you've completed [**Section 1: Set Up Development Environment**](./mic
 
 Unlike a digital signal's two discrete states, an **analog signal** varies continuously across a range. A dimmer knob is a good mental model — brightness slides smoothly from off to full, through effectively infinite intermediate levels, rather than snapping between just "on" and "off."
 
-Plenty of real-world quantities are naturally analog: temperature, light level, sound volume, and — relevant here — the wiper voltage on a potentiometer. None of that fits into a plain HIGH/LOW GPIO read, which is where the **ADC (Analog-to-Digital Converter)** comes in: it converts a continuous input voltage into a discrete number your program can work with.
+Plenty of real-world quantities are naturally analog: temperature, light level, sound volume, and — relevant here — the wiper voltage on a potentiometer. None of that fits into a plain HIGH/LOW GPIO read, which is where the **ADC (Analog-to-Digital Converter)** comes in: it converts a continuous input voltage into a discrete number your program can work with. 
+
+![ESP-IDF](/img/4M1.svg)
 
 Think of an ADC as a ruler laid across the voltage range (say, 0V to 3.3V), marked off into many small ticks. How many ticks it has is its **resolution** — more ticks means finer distinction between close voltage values.
 
@@ -31,6 +33,8 @@ ESP32's ADC is **12-bit**, giving 2¹² = **4096** possible levels, so readings 
 - 0V in → roughly `0` out
 - 3.3V in → roughly `4095` out
 - everything in between scales proportionally
+
+![ESP-IDF](/img/4M2.webp)
 
 In MicroPython, `adc.read()` hands you that integer directly.
 
@@ -114,6 +118,8 @@ while True:
 
 Run it, then open **View → Plotter** in Thonny to see a live graph. Turning the potentiometer should move the curve in real time.
 
+![ESP-IDF](/img/4M3.webp)
+
 :::note
 
 **Why doesn't the max reading line up exactly with 3.3V?** You may notice the reading saturates at 4095 before you'd expect, or gets non-linear near the extremes. ESP32's ADC hardware only handles a limited input range natively, so an internal attenuator extends it — and in MicroPython's default configuration, the reliably measurable ceiling is closer to roughly 3.1V rather than the full 3.3V rail. Past that, readings just clamp at 4095.
@@ -134,6 +140,8 @@ This is exactly why `read_uv()` is worth using over the raw `read()` value: it a
 ## 5. Cleaning Up Noise
 
 Even holding the potentiometer perfectly still, you'll likely see the reading jitter slightly rather than sitting on one fixed number, sometimes with the occasional spike. ESP32's ADC is fairly sensitive to power-supply noise and ambient electrical interference, so this is normal.
+
+![ESP-IDF](/img/4M4.webp)
 
 Two common ways to deal with it:
 
@@ -176,6 +184,8 @@ while True:
 ```
 
 Running this alongside the raw reading, you should see the "Smooth" value noticeably steadier than "Raw" — fewer spikes, less jitter.
+
+![ESP-IDF](/img/4M5.webp)
 
 ---
 

@@ -41,6 +41,8 @@ Each UART data frame is built from:
 - **Parity bit (optional)** — for basic error detection.
 - **Stop bit(s)** — always `1`, signals the end of the byte.
 
+![ESP-IDF](/img/6M1.svg)
+
 ### 1.3 Wiring
 
 UART needs two signal lines plus a shared ground:
@@ -50,6 +52,8 @@ UART needs two signal lines plus a shared ground:
 - **GND** — a common reference point so both sides interpret voltage levels the same way.
 
 The key wiring rule: connections cross over. Device A's TX goes to Device B's RX, and Device A's RX goes to Device B's TX — the same way you'd need two people's "speak" and "listen" roles to line up for a conversation to work.
+
+![ESP-IDF](/img/6M2.svg)
 
 ---
 

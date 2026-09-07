@@ -98,8 +98,6 @@ Because this script loops forever, the Shell stays busy running it — you won't
 
 ![ESP-IDF](/img/2M5.webp)
 
-:::
-
 ![ESP-IDF](/img/2M6.webp)
 
 Forcibly stopping the script this way raises a `KeyboardInterrupt`, which is harmless but shows up as an error in the Shell. If you'd rather handle that cleanly, wrap the loop in a `try`/`except`:
@@ -122,6 +120,7 @@ try:
 except KeyboardInterrupt:
     print("Exit")
 ```
+:::
 
 4. **Save it to the board.** 
 - Stop the program, then click the Save button on the toolbar (or press Ctrl + S).
