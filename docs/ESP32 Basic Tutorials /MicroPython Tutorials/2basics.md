@@ -146,7 +146,7 @@ except KeyboardInterrupt:
 
 Saving a script to the board doesn't automatically make it run when you unplug and re-power the device — MicroPython follows a specific boot sequence.
 
-![ESP-IDF](/img/2M11.webp)
+![ESP-IDF](/img/2M11.svg)
 
 ### 3.1 `boot.py`
 
@@ -175,7 +175,7 @@ To have a program start automatically when the board is powered on its own (no c
 1. Open the `test_print.py` file you saved earlier from the MicroPython device panel.
 2. Use **File → Save copy**, choose **MicroPython device** as the destination, and name the file `main.py`.
 
-![ESP-IDF](/img/2M12.svg)
+![ESP-IDF](/img/2M12.webp)
 
 ![ESP-IDF](/img/2M13.webp)
 
