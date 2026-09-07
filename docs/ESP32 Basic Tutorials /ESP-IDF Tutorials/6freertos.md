@@ -30,6 +30,8 @@ IDF FreeRTOS's key characteristics on ESP32 chips:
 
 ## 1. Core FreeRTOS Concepts
 
+![ESP-IDF](/img/6E1.svg)
+
 FreeRTOS structures concurrency around **tasks** — independent threads of execution that you create, delete, and otherwise manage through the FreeRTOS API. The kernel's scheduler decides which task runs when, based on priority and time-slicing, creating the illusion (or reality, on multicore) of things happening simultaneously.
 
 ### 1.1 Task States
@@ -40,6 +42,8 @@ A FreeRTOS task is just a C function, usually written with an infinite loop so i
 - **Ready** — able to run, just waiting for a core to become free.
 - **Blocked** — waiting on something (a timeout, a peripheral event, a semaphore) and not consuming CPU time while it waits.
 - **Suspended** — parked indefinitely until something explicitly resumes it.
+
+![ESP-IDF](/img/6E2.svg)
 
 ### 1.2 How Scheduling Works
 
@@ -125,6 +129,10 @@ void app_main(void)
 ### 2.2 Build, Flash, and Observe
 
 Set your target, port, and flash method (see [Section 2](./run-example#13-configure-target-port-and-flash-method)), then build, flash, and monitor.
+
+![ESP-IDF](/img/6E3.webp)
+
+- Click ![ESP-IDF](/img/6E4.webp) to automatically perform the build, flash, and monitor steps in sequence with one click.
 
 :::note
 

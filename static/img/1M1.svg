@@ -1,0 +1,56 @@
+<svg width="1000" height="700" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+
+  <desc>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-MicroPython-Tutorials/Getting-Started</desc>
+  <metadata>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-MicroPython-Tutorials/Getting-Started</metadata>
+  <defs>
+    <style>
+      text { font-family: system-ui,-apple-system,Segoe UI,Roboto,Noto Sans,Arial,sans-serif; fill:#3b3b3b; }
+      .layer-label { font-size:12px; font-weight:500; }
+      .sub-label   { font-size:11px; fill:#57606a; }
+      .item-label  { font-size:10.5px; fill:#5c6773; }
+      .side-label  { font-size:11px; fill:#7a7a7a; }
+      .stroke { stroke:#b7bcc3; stroke-width:0.8; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="350" fill="#ffffff"/>
+
+  <!-- User Application Layer -->
+  <rect x="110" y="26" width="360" height="44" rx="4" ry="4" class="stroke" fill="#f7f8fa"/>
+  <text x="290" y="48" text-anchor="middle" dominant-baseline="middle" class="layer-label">User Python Code (.py files)</text>
+
+  <!-- MicroPython VM Layer -->
+  <rect x="110" y="86" width="360" height="76" rx="4" ry="4" class="stroke" fill="#f2f3f5"/>
+  <text x="290" y="102" text-anchor="middle" dominant-baseline="middle" class="layer-label">MicroPython Virtual Machine</text>
+
+  <!-- VM Components -->
+  <rect x="122"  y="116" width="104" height="32" rx="2" ry="2" class="stroke" fill="#ffffff"/>
+  <text x="174" y="132" text-anchor="middle" dominant-baseline="middle" class="item-label">Bytecode Interpreter</text>
+
+  <rect x="238" y="116" width="104" height="32" rx="2" ry="2" class="stroke" fill="#ffffff"/>
+  <text x="290" y="132" text-anchor="middle" dominant-baseline="middle" class="item-label">Garbage Collector</text>
+
+  <rect x="354" y="116" width="104" height="32" rx="2" ry="2" class="stroke" fill="#ffffff"/>
+  <text x="406" y="132" text-anchor="middle" dominant-baseline="middle" class="item-label">Built-in Modules</text>
+
+  <!-- Port Layer -->
+  <rect x="110" y="180" width="360" height="40" rx="4" ry="4" class="stroke" fill="#edf0f3"/>
+  <text x="290" y="200" text-anchor="middle" dominant-baseline="middle" class="layer-label">ESP32 Port Layer (ports/esp32/)</text>
+
+  <!-- ESP-IDF Layer -->
+  <rect x="110" y="240" width="360" height="40" rx="4" ry="4" class="stroke" fill="#e9edf2"/>
+  <text x="290" y="260" text-anchor="middle" dominant-baseline="middle" class="layer-label">ESP-IDF Framework + FreeRTOS</text>
+
+  <!-- Hardware Layer -->
+  <rect x="110" y="300" width="360" height="32" rx="4" ry="4" class="stroke" fill="#e6eaef"/>
+  <text x="290" y="316" text-anchor="middle" dominant-baseline="middle" class="layer-label">ESP32 Hardware</text>
+
+  <!-- Side annotations -->
+  <text x="16" y="48"  class="side-label">Application</text>
+  <text x="16" y="124" class="side-label">Runtime</text>
+  <text x="16" y="200" class="side-label">Abstraction</text>
+  <text x="16" y="260" class="side-label">System</text>
+  <text x="16" y="316" class="side-label">Hardware</text>
+  <!-- Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-MicroPython-Tutorials/Getting-Started -->
+</svg>

@@ -1,0 +1,122 @@
+<svg width="1450" height="720" viewBox="75 90 725 360" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;" shape-rendering="crispEdges">
+
+  <desc>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/FreeRTOS</desc>
+  <metadata>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/FreeRTOS</metadata>
+    <style>
+        /* General Styling */
+        .axis-line { stroke: #495057; stroke-width: 2; }
+        .grid-line { stroke: #dee2e6; stroke-width: 1; }
+        .axis-label, .task-label, .time-label, .legend-text {
+            fill: #343a49;
+            font-size: 14px;
+            dominant-baseline: middle;
+        }
+        .core-group-label { font-weight: bold; font-size: 16px; }
+        .ellipsis-label { font-size: 20px; font-weight: bold; }
+        /* Task Block Styling */
+        .task-block {
+            stroke-width: 2;
+            stroke: transparent;
+            opacity: 0.8;
+            transition: opacity 0.2s ease, stroke 0.2s ease;
+        }
+        .task-block:hover {
+            opacity: 1.0;
+            stroke: #343a49;
+        }
+        /* Color Palette*/
+        .core0-task1-color { fill: #005f73; } /* Dark Teal/Blue */
+        .core0-task2-color { fill: #0a9396; } /* Lighter Teal */
+        .core1-task3-color { fill: #94d2bd; } /* Muted Green/Cyan */
+        .core1-task4-color { fill: #e9d8a6; } /* Muted Sand */
+    </style>
+    <!-- Axes and Labels -->
+    <g id="axes">
+        <!-- Y-Axis -->
+        <line x1="150" y1="90" x2="150" y2="420" class="axis-line"/>
+        <!-- X-Axis -->
+        <line x1="150" y1="420" x2="800" y2="420" class="axis-line"/>
+        <!-- Task Rows and horizontal grid lines -->
+        <g id="task-rows" class="task-label">
+            <!-- CPU 0 Task Group -->
+            <text x="140" y="125" text-anchor="end" class="core-group-label">CPU 0</text>
+            <text x="140" y="165" text-anchor="end">Task 1</text>
+            <line x1="150" y1="180" x2="800" y2="180" class="grid-line"/>
+            <text x="140" y="215" text-anchor="end">Task 2</text>
+            <line x1="150" y1="230" x2="800" y2="230" class="grid-line"/>
+            <!-- Separator Line -->
+            <line x1="100" y1="260" x2="800" y2="260" style="stroke:#adb5bd; stroke-width:1; stroke-dasharray: 8 8;"/>
+            <!-- CPU 1 Task Group -->
+            <text x="140" y="295" text-anchor="end" class="core-group-label">CPU 1</text>
+            <text x="140" y="335" text-anchor="end">Task 3</text>
+            <line x1="150" y1="350" x2="800" y2="350" class="grid-line"/>
+            <text x="140" y="385" text-anchor="end">Task 4</text>
+            <line x1="150" y1="400" x2="800" y2="400" class="grid-line"/>
+        </g>
+        <!-- Time Ticks and vertical grid lines -->
+        <g id="time-ticks" class="time-label" text-anchor="middle">
+            <!-- T0 -->
+            <line x1="150" y1="90" x2="150" y2="420" class="grid-line"/><text x="150" y="440">T0</text>
+            <!-- T0.5 -->
+            <line x1="200" y1="90" x2="200" y2="420" class="grid-line"/>
+            <!-- T1 -->
+            <line x1="250" y1="90" x2="250" y2="420" class="grid-line"/><text x="250" y="440">T1</text>
+            <!-- T1.5 -->
+            <line x1="300" y1="90" x2="300" y2="420" class="grid-line"/>
+            <!-- T2 -->
+            <line x1="350" y1="90" x2="350" y2="420" class="grid-line"/><text x="350" y="440">T2</text>
+            <!-- T2.5 -->
+            <line x1="400" y1="90" x2="400" y2="420" class="grid-line"/>
+            <!-- T3 -->
+            <line x1="450" y1="90" x2="450" y2="420" class="grid-line"/><text x="450" y="440">T3</text>
+            <!-- T3.5 -->
+            <line x1="500" y1="90" x2="500" y2="420" class="grid-line"/>
+            <!-- T4 -->
+            <line x1="550" y1="90" x2="550" y2="420" class="grid-line"/><text x="550" y="440">T4</text>
+            <!-- T4.5 -->
+            <line x1="600" y1="90" x2="600" y2="420" class="grid-line"/>
+            <!-- T5 -->
+            <line x1="650" y1="90" x2="650" y2="420" class="grid-line"/><text x="650" y="440">T5</text>
+            <!-- T5.5 -->
+            <line x1="700" y1="90" x2="700" y2="420" class="grid-line"/>
+            <!-- T6 -->
+            <line x1="750" y1="90" x2="750" y2="420" class="grid-line"/><text x="750" y="440">T6</text>
+            <!-- Ellipsis -->
+            <text x="785" y="435" class="ellipsis-label">...</text>
+        </g>
+    </g>
+    <!-- Task Execution Blocks -->
+    <g id="task-execution-blocks">
+        <!-- Time Slot 0-1 -->
+        <rect x="150" y="140" width="50" height="40" class="task-block core0-task1-color"/>
+        <rect x="200" y="190" width="50" height="40" class="task-block core0-task2-color"/>
+        <rect x="150" y="310" width="50" height="40" class="task-block core1-task3-color"/>
+        <rect x="200" y="360" width="50" height="40" class="task-block core1-task4-color"/>
+        <!-- Time Slot 2-3 -->
+        <rect x="250" y="140" width="50" height="40" class="task-block core0-task1-color"/>
+        <rect x="300" y="190" width="50" height="40" class="task-block core0-task2-color"/>
+        <rect x="250" y="310" width="50" height="40" class="task-block core1-task3-color"/>
+        <rect x="300" y="360" width="50" height="40" class="task-block core1-task4-color"/>
+        <!-- Time Slot 4-5 -->
+        <rect x="350" y="140" width="50" height="40" class="task-block core0-task1-color"/>
+        <rect x="400" y="190" width="50" height="40" class="task-block core0-task2-color"/>
+        <rect x="350" y="310" width="50" height="40" class="task-block core1-task3-color"/>
+        <rect x="400" y="360" width="50" height="40" class="task-block core1-task4-color"/>
+        <!-- Time Slot 6-7 -->
+        <rect x="450" y="140" width="50" height="40" class="task-block core0-task1-color"/>
+        <rect x="500" y="190" width="50" height="40" class="task-block core0-task2-color"/>
+        <rect x="450" y="310" width="50" height="40" class="task-block core1-task3-color"/>
+        <rect x="500" y="360" width="50" height="40" class="task-block core1-task4-color"/>
+        <!-- Time Slot 8-9 -->
+        <rect x="550" y="140" width="50" height="40" class="task-block core0-task1-color"/>
+        <rect x="600" y="190" width="50" height="40" class="task-block core0-task2-color"/>
+        <rect x="550" y="310" width="50" height="40" class="task-block core1-task3-color"/>
+        <rect x="600" y="360" width="50" height="40" class="task-block core1-task4-color"/>
+        <!-- Time Slot 10-11 -->
+        <rect x="650" y="140" width="50" height="40" class="task-block core0-task1-color"/>
+        <rect x="700" y="190" width="50" height="40" class="task-block core0-task2-color"/>
+        <rect x="650" y="310" width="50" height="40" class="task-block core1-task3-color"/>
+        <rect x="700" y="360" width="50" height="40" class="task-block core1-task4-color"/>
+    </g>
+  <!-- Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/FreeRTOS -->
+</svg>

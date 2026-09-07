@@ -28,6 +28,8 @@ The short version: MicroPython lets you write Python and have it directly contro
 
 ### 1.1 How It Actually Runs
 
+ ![ESP-IDF](/img/1M1.svg)
+
 MicroPython lives entirely inside firmware you flash onto the device. Once that firmware is running, you interact with it in two ways:
 
 **Interactively, via the REPL.** After boot, the device runs a small Python interpreter and waits over a serial connection for input. Anything you type gets executed immediately, with results echoed straight back — this is the **REPL** (Read-Eval-Print Loop), and it's what makes MicroPython development feel so fast to iterate on.
@@ -62,6 +64,8 @@ If you want to move fast and don't need to squeeze out every cycle or byte, Micr
 
 Download and install Thonny from [thonny.org](https://thonny.org/).
 
+ ![ESP-IDF](/img/1M2.webp)
+
 ### 2.2 Flash MicroPython Firmware
 
 Before MicroPython code will run, the board needs MicroPython firmware flashed onto it. A few approaches work; the one below (flashing through Thonny directly) is the simplest for most people.
@@ -74,9 +78,15 @@ Before MicroPython code will run, the board needs MicroPython firmware flashed o
 
 2. **Open the interpreter settings.** In Thonny, click the interpreter indicator in the bottom-right corner (it likely shows "Local Python" initially), then choose **Configure interpreter**.
 
+ ![ESP-IDF](/img/1M3.webp)
+
 3. **Open the firmware installer.** Select **MicroPython (ESP32)** as the interpreter and pick the port your board is connected to. Click **Install or update MicroPython (esptool)**.
 
+ ![ESP-IDF](/img/1M4.webp)
+
 4. **Choose firmware options:**
+
+ ![ESP-IDF](/img/1M5.webp)
    - **Target port** — the port your board is on (if you're not sure which one, unplug the board and see which port disappears).
    - **MicroPython family** — the chip family matching your hardware.
    - **Variant** — the generic `Espressif ...` option for your chip.
@@ -88,9 +98,13 @@ Before MicroPython code will run, the board needs MicroPython firmware flashed o
 
 5. **Flash it.** Click **Install**. Thonny erases the existing flash and writes the new firmware — wait for the `Done!` message.
 
+ ![ESP-IDF](/img/1M6.webp)
+
 ### 2.3 Verify the Setup
 
 1. **Reconnect the board** — unplug and plug it back in, then make sure Thonny's interpreter is set to **MicroPython (ESP32)** with the correct port selected.
+
+ ![ESP-IDF](/img/1M7.webp)
 
    :::note
    The board's COM port can change after flashing, especially on chips with native USB (like ESP32-S3/C3). If Thonny can't connect, reselect the port from the bottom-right menu.
@@ -98,7 +112,11 @@ Before MicroPython code will run, the board needs MicroPython firmware flashed o
 
 2. **Restart the interpreter** if the Shell panel looks unresponsive — the Stop button on the toolbar restarts it.
 
+ ![ESP-IDF](/img/1M8.webp)
+
 3. **Check the prompt.** A successful connection shows the MicroPython version, board info, and a `>>>` prompt in the Shell — that's the MicroPython REPL running live on your board.
+
+ ![ESP-IDF](/img/1M9.webp)
 
 4. **Run a test line.** At the `>>>` prompt, type:
 
@@ -107,6 +125,8 @@ Before MicroPython code will run, the board needs MicroPython firmware flashed o
    ```
 
    and press Enter. You should immediately see `Hello, ESP32!` echoed back.
+
+    ![ESP-IDF](/img/1M10.webp)
 
 At this point your MicroPython environment is fully working, and you've run your first line of code directly on the board.
 

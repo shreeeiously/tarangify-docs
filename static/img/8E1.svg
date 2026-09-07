@@ -1,0 +1,112 @@
+<svg width="1400" height="540" viewBox="0 100 700 270" xmlns="http://www.w3.org/2000/svg"
+    font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif"
+    font-size="16px">
+
+  <desc>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/Wi-Fi</desc>
+  <metadata>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/Wi-Fi</metadata>
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#333D41"></polygon>
+        </marker>
+    </defs>
+
+
+    <style>
+        .box {
+            fill: #F7F9F8;
+            stroke: #6A7D72;
+            stroke-width: 1.5;
+        }
+
+        .box-text {
+            fill: #333D41;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            font-weight: normal;
+        }
+
+        .line {
+            fill: none;
+            stroke: #333D41;
+            stroke-width: 1.2;
+            marker-end: url(#arrowhead);
+        }
+
+        .label-box {
+            fill: #FFFFFF;
+            stroke: #6A7D72;
+            stroke-width: 1;
+        }
+
+        .label-text {
+            fill: #333D41;
+            text-anchor: middle;
+            dominant-baseline: central;
+            font-size: 14px;
+        }
+
+        .handler-text {
+            fill: #70797D;
+            text-anchor: middle;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    </style>
+
+    <!-- Background -->
+    <rect x="0" y="110" width="100%" height="270" fill="#FFFFFF"></rect>
+
+    <!-- Module Blocks -->
+    <g id="blocks">
+        <!-- TCP Protocol Stack -->
+        <rect x="50" y="150" width="120" height="60" rx="6" class="box"></rect>
+        <text x="110" y="172" class="box-text">TCP</text>
+        <text x="110" y="192" class="box-text">Stack</text>
+
+        <!-- Event Task -->
+        <rect x="290" y="150" width="120" height="60" rx="6" class="box"></rect>
+        <text x="350" y="172" class="box-text">Event</text>
+        <text x="350" y="192" class="box-text">Task</text>
+
+        <!-- Wi-Fi Driver -->
+        <rect x="290" y="300" width="120" height="60" rx="6" class="box"></rect>
+        <text x="350" y="322" class="box-text">Wi-Fi</text>
+        <text x="350" y="342" class="box-text">Driver</text>
+
+        <!-- Application Task -->
+        <rect x="530" y="150" width="120" height="60" rx="6" class="box"></rect>
+        <text x="590" y="172" class="box-text">Application</text>
+        <text x="590" y="192" class="box-text">Task</text>
+    </g>
+
+    <!-- Connectors and Labels -->
+    <g id="connectors">
+        <!-- TCP Protocol Stack -> Event Task -->
+        <path class="line" d="M170,180 H287"></path>
+        <rect class="label-box" x="205" y="145" width="50" height="25"></rect>
+        <text class="label-text" x="230" y="157.5">Event</text>
+
+        <!-- Wi-Fi Driver -> Event Task -->
+        <path class="line" d="M350,300 V213"></path>
+        <rect class="label-box" x="360" y="248" width="50" height="25"></rect>
+        <text class="label-text" x="385" y="260.5">Event</text>
+
+        <!-- Event Task -> Application Task -->
+        <path class="line" d="M410,180 H527"></path>
+        <rect class="label-box" x="420" y="120" width="100" height="50"></rect>
+        <text class="label-text" x="470" y="137.5">Callback</text>
+        <text class="label-text" x="470" y="152.5">or Event</text>
+
+        <!-- Application Task -> Wi-Fi Driver -->
+        <path class="line" d="M590,210 V330 H413"></path>
+        <rect class="label-box" x="470" y="290" width="70" height="25"></rect>
+        <text class="label-text" x="505" y="302.5">API Call</text>
+    </g>
+
+    <!-- Top Handler Labels -->
+    <g id="handler-labels">
+        <text class="handler-text" x="350" y="138">Default Handler</text>
+        <text class="handler-text" x="590" y="138">User Handler</text>
+    </g>
+  <!-- Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-ESP-IDF-Tutorials/Wi-Fi -->
+</svg>

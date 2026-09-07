@@ -39,6 +39,8 @@ Most chips in the ESP32 family include built-in Wi-Fi, which is a big part of wh
 
 ## 2. The Wi-Fi Programming Model
 
+![ESP-IDF](/img/8E1.svg)
+
 ESP-IDF's Wi-Fi stack is **event-driven**. Think of the Wi-Fi driver as a black box that doesn't know anything about your application code, the TCP/IP stack, or your tasks — it just responds to API calls and emits events.
 
 Your application calls Wi-Fi driver functions to initialize and configure Wi-Fi. The driver does its work and reports back by posting events, rather than blocking your code waiting for things to happen.
@@ -155,17 +157,27 @@ void app_main(void)
 
 3. **Disable NVS for this example.** Wi-Fi apps normally store credentials in Non-Volatile Storage (NVS), but this example hard-codes them for simplicity, and NVS is enabled by default. To avoid unrelated warnings, turn it off:
 
-   - Open the SDK Configuration Editor.
+   - Open the ![ESP-IDF](/img/8E2.webp) SDK Configuration Editor.
    - Search for **NVS** and disable the relevant option.
+
+    ![ESP-IDF](/img/8E3.webp)
+
    - Save.
+   
 
    :::warning
    Hard-coding Wi-Fi credentials is fine for a quick test, but it's not how you'd want to ship a real device — store credentials in NVS (or another secure store) instead.
    :::
 
 4. Set your target, port, and flash method (see [Section 2](./run-example#13-configure-target-port-and-flash-method)).
-5. Build, flash, and monitor. You should see log output showing the AP has started.
+
+ ![ESP-IDF](/img/8E4.webp)
+
+5.  ![ESP-IDF](/img/8E5.webp) Build, flash, and monitor. You should see log output showing the AP has started.
+
 6. Connect to the ESP32's hotspot from a phone or laptop. When a device connects, you'll see `Event nr: 14!` in the log — event ID `14` corresponds to `WIFI_EVENT_AP_STACONNECTED` (the full list of Wi-Fi event IDs is defined in ESP-IDF's `esp_wifi_types_generic.h`).
+
+ ![ESP-IDF](/img/8E6.webp)
 
 ---
 

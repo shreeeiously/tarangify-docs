@@ -31,6 +31,8 @@ Support varies by chip: the original ESP32 supports both Classic and BLE, while 
 
 ## 2. How BLE Fits Together in ESP-IDF
 
+ ![ESP-IDF](/img/9E1.svg)
+
 BLE was introduced with Bluetooth 4.0 and isn't backward-compatible with Bluetooth Classic. It trades raw throughput for much lower power draw, which is exactly the tradeoff most battery-powered IoT devices want.
 
 ESP-IDF's BLE support is organized in layers:
@@ -59,28 +61,42 @@ For this tutorial, GATT is the one you'll interact with most directly — it's w
 
 ## 4. Example: A GATT Server You Can Control From Your Phone
 
+ ![ESP-IDF](/img/9E2.svg)
+
 This example builds on ESP-IDF's own NimBLE GATT server sample and exposes two things over BLE: a simulated, slowly-changing heart rate reading, and a writable characteristic that toggles the board's onboard LED. You'll interact with it using a generic BLE debugging app on your phone — this tutorial uses **LightBlue**, available for iOS and Android.
 
 ### 4.1 Open the Example Project
 
 1. Open VS Code, click the ESP-IDF extension icon, and choose **Show Example Project** under **Advanced**.
+
+ ![ESP-IDF](/img/9E3.webp)
+
 2. Select your ESP-IDF version.
+
+ ![ESP-IDF](/img/9E4.webp)
+
 3. Under the **bluetooth** category, find and select the NimBLE GATT server example, then choose a folder to copy it into.
 
-:::danger
+:::warning
 
 The project path must not contain spaces, non-ASCII characters, or other special characters.
 
 :::
 
+ ![ESP-IDF](/img/9E5.webp)
+
+
 ### 4.2 Configure the LED for Your Board
 
 The example ships with default LED configuration that likely won't match your board's actual wiring. Update it before flashing:
 
-1. Open the SDK Configuration Editor.
+1. Open the  ![ESP-IDF](/img/9E6.webp) SDK Configuration Editor.
 2. Set:
    - **LED type** — `GPIO` for a standard LED, or `LED strip` for an addressable LED like WS2812.
    - **LED GPIO number** — the pin your board's LED is actually connected to.
+
+![ESP-IDF](/img/9E7.webp)
+
 3. Save.
 
 :::info
@@ -91,9 +107,13 @@ Check your specific Tarangify board's documentation for its LED type and GPIO pi
 
 ### 4.3 Build, Flash, and Monitor
 
-Set your target, port, and flash method (see [Section 2](./run-example#13-configure-target-port-and-flash-method)), then build, flash, and monitor.
+Set your target, port, and flash method (see [Section 2](./run-example#13-configure-target-port-and-flash-method))  ![ESP-IDF](/img/9E8.webp)
+, then  ![ESP-IDF](/img/9E9.webp) build, flash, and monitor.
 
 You should see BLE initialization logs, followed by a simulated heart rate value (updating roughly once per second, cycling somewhere in the 60–80 range) printed to the serial monitor.
+
+ ![ESP-IDF](/img/9E10.webp)
+
 
 ### 4.4 Connect Over Bluetooth
 

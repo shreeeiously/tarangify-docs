@@ -28,6 +28,8 @@ This section uses the ESP32-S3 as the reference chip, matching Tarangify's ESP32
 
 ESP32-series chips pack in a wide range of built-in peripheral interfaces for talking to external hardware — sensors, displays, storage, and more. Exactly which peripherals are present, how many instances of each, and how flexibly they can be mapped to pins all varies by chip variant.
 
+![ESP-IDF](/img/7E1.webp)
+
 Here's a quick reference for the peripherals you'll run into most often:
 
 | Peripheral    | Purpose                                                                  |
@@ -50,6 +52,8 @@ Here's a quick reference for the peripherals you'll run into most often:
 ## 2. How Pins Get Assigned: IO MUX and the GPIO Matrix
 
 ESP32-S3 exposes 45 physical GPIO pins, and nearly all of them can serve either as plain GPIO or as the input/output for one of the chip's internal peripherals. Two mechanisms make that flexible: **IO MUX** and the **GPIO Matrix**.
+
+![ESP-IDF](/img/7E2.webp)
 
 ### 2.1 IO MUX
 
