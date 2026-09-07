@@ -23,7 +23,13 @@ Make sure you've completed [**Section 1: Set Up Development Environment**](./mic
 Embedded development means juggling files in two places — your computer and the board's own flash storage. Thonny's file view handles that.
 
 1. Open it via **View → Files** in the menu bar.
+
+ ![ESP-IDF](/img/2M1.webp)
+
 2. The sidebar splits into two panels:
+
+![ESP-IDF](/img/2M2.webp)
+
    - **Top: Local files** — your computer's filesystem.
    - **Bottom: MicroPython device** — files stored on the ESP32 itself.
 
@@ -54,6 +60,7 @@ import machine
 freq = machine.freq() / 1000000
 print(f"Device Info: {sys.platform}\nCPU Freq: {freq} MHz")
 ```
+![ESP-IDF](/img/2M3.webp)
 
 You'll see the board's platform name and CPU clock speed printed back immediately.
 
@@ -80,13 +87,20 @@ while True:
 ```
 
 2. **Run it** with the green Run button (or `F5`).
+
+![ESP-IDF](/img/2M4.webp)
+
 3. **Watch the output** stream into the Shell below.
 
 :::note
 
 Because this script loops forever, the Shell stays busy running it — you won't be able to save files or do anything else until you stop it. Click the red Stop button, or press `Ctrl + C` in the Shell.
 
+![ESP-IDF](/img/2M5.webp)
+
 :::
+
+![ESP-IDF](/img/2M6.webp)
 
 Forcibly stopping the script this way raises a `KeyboardInterrupt`, which is harmless but shows up as an error in the Shell. If you'd rather handle that cleanly, wrap the loop in a `try`/`except`:
 
@@ -109,13 +123,30 @@ except KeyboardInterrupt:
     print("Exit")
 ```
 
-4. **Save it to the board.** Stop the script, then save (`Ctrl + S`), choose **MicroPython device** as the destination, and give it a name — for example `test_print.py`. It'll now show up under the device panel in the file view.
+4. **Save it to the board.** 
+- Stop the program, then click the Save button on the toolbar (or press Ctrl + S).
+
+![ESP-IDF](/img/2M7.webp)
+
+- choose **MicroPython device** as the destination,
+
+![ESP-IDF](/img/2M8.webp)
+
+ and give it a name — for example `test_print.py`. 
+ 
+ ![ESP-IDF](/img/2M9.webp)
+
+ It'll now show up under the device panel in the file view.
+
+ ![ESP-IDF](/img/2M10.webp)
 
 ---
 
 ## 3. How ESP32 Decides What Runs at Boot
 
 Saving a script to the board doesn't automatically make it run when you unplug and re-power the device — MicroPython follows a specific boot sequence.
+
+![ESP-IDF](/img/2M11.webp)
 
 ### 3.1 `boot.py`
 
@@ -143,11 +174,22 @@ To have a program start automatically when the board is powered on its own (no c
 
 1. Open the `test_print.py` file you saved earlier from the MicroPython device panel.
 2. Use **File → Save copy**, choose **MicroPython device** as the destination, and name the file `main.py`.
+
+![ESP-IDF](/img/2M12.svg)
+
+![ESP-IDF](/img/2M13.webp)
+
+![ESP-IDF](/img/2M14.webp)
+
 3. In the Shell, press `Ctrl + D` to trigger a soft reset and check that `main.py` runs automatically.
+
+![ESP-IDF](/img/2M15.webp)
 
 :::note
 
 **Why `Ctrl + D`?** When Thonny connects to a board, it interrupts whatever's currently running so it can drop into the REPL — meaning even a `main.py` that ran fine on power-up gets stopped the moment Thonny attaches, with no visible output. A soft reset (`Ctrl + D`) restarts the MicroPython interpreter while keeping Thonny connected, so you get to watch `main.py`'s startup output in the Shell.
+
+![ESP-IDF](/img/2M16.webp)
 
 :::
 
@@ -159,7 +201,12 @@ Once you start using external libraries — a driver for an OLED display, a sens
 
 1. Find the file (for example `ssd1327.py`) in the local files panel.
 2. Right-click it and choose **Upload to /**.
+
+![ESP-IDF](/img/2M17.webp)
+
 3. It's now on the board's filesystem, and importable in your code with `import ssd1327`.
+
+![ESP-IDF](/img/2M18.webp)
 
 ---
 

@@ -1,0 +1,98 @@
+<svg width="1600" height="240" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+
+  <desc>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-MicroPython-Tutorials/Basic</desc>
+  <metadata>Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-MicroPython-Tutorials/Basic</metadata>
+  <defs>
+    <style>
+      text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        text-rendering: optimizeLegibility;
+      }
+
+      .title {
+        font-size: 16px;
+        fill: #1F2329;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      /* Subtitle */
+      .subtitle {
+        font-size: 12px;
+        fill: #606266;
+        font-weight: 400;
+      }
+
+      /* General box styles */
+      rect.box {
+        stroke: #DCDFE6;
+        stroke-width: 1.5;
+        rx: 6;
+        ry: 6;
+      }
+
+      /* 1. Power state background */
+      .bg-power {
+        fill: #F2F6FC;
+      }
+
+      /* 2. User file background */
+      .bg-file {
+        fill: #FFFFFF;
+      }
+
+      /* 3. REPL state background */
+      .bg-repl {
+        fill: #ECF5FF;
+        stroke: #B3D8FF;
+      }
+
+      /* Connecting lines */
+      .line {
+        stroke: #A0CFFF;
+        stroke-width: 2;
+        fill: none;
+      }
+    </style>
+    <!-- Arrow definition -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#A0CFFF" />
+    </marker>
+  </defs>
+  <!-- White background layer -->
+  <rect x="0" y="0" width="800" height="120" fill="#FFFFFF" />
+  <!-- Flowchart Body -->
+  <!-- Node 1: Power On -->
+  <g transform="translate(100, 60)">
+    <rect x="-70" y="-30" width="140" height="60" class="box bg-power" />
+    <text x="0" y="-6" class="title">Power On</text>
+    <text x="0" y="16" class="subtitle">Power Up / Reset</text>
+  </g>
+  <!-- Line 1 -> 2 -->
+  <line x1="170" y1="60" x2="220" y2="60" class="line" marker-end="url(#arrow)" />
+  <!-- Node 2: boot.py -->
+  <g transform="translate(300, 60)">
+    <rect x="-70" y="-30" width="140" height="60" class="box bg-file" />
+    <text x="0" y="-6" class="title">boot.py</text>
+    <text x="0" y="16" class="subtitle">System Initialization</text>
+  </g>
+  <!-- Line 2 -> 3 -->
+  <line x1="370" y1="60" x2="420" y2="60" class="line" marker-end="url(#arrow)" />
+  <!-- Node 3: main.py -->
+  <g transform="translate(500, 60)">
+    <rect x="-70" y="-30" width="140" height="60" class="box bg-file" />
+    <text x="0" y="-6" class="title">main.py</text>
+    <text x="0" y="16" class="subtitle">User Main Program</text>
+  </g>
+  <!-- Line 3 -> 4 -->
+  <line x1="570" y1="60" x2="620" y2="60" class="line" marker-end="url(#arrow)" />
+  <!-- Node 4: REPL -->
+  <g transform="translate(700, 60)">
+    <rect x="-70" y="-30" width="140" height="60" class="box bg-repl" />
+    <text x="0" y="-6" class="title">REPL</text>
+    <text x="0" y="16" class="subtitle">Interactive Terminal</text>
+  </g>
+  <!-- Copyright 2026 Waveshare. Author: Wulu. Source: https://docs.waveshare.com/ESP32-MicroPython-Tutorials/Basic -->
+</svg>
