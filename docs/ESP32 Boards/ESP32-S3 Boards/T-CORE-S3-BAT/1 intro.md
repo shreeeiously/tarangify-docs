@@ -7,6 +7,12 @@ sidebar_position: 1
 
 The **Tarangify T-CORE-S3-BAT** is a battery-powered ESP32-S3 development board designed for portable IoT devices, wireless sensor networks, environmental monitoring systems, and low-power embedded applications.
 
+<img
+  src="/tarangify-docs/img/Tarangify-T-CORE-S3-BAT.png"
+  alt="Tarangify T-CORE-S3-BAT"
+  width="500"
+/>
+
 Built around the powerful **ESP32-S3-N16R8** module, the board combines wireless connectivity, onboard storage, battery charging, and battery monitoring features into a compact platform that is ideal for mobile and remote deployments.
 
 Unlike conventional development boards that require external battery management circuits, the T-CORE-S3-BAT integrates battery support directly on the board, simplifying hardware design and reducing development time.
@@ -29,6 +35,28 @@ Unlike conventional development boards that require external battery management 
 - Reset and Boot Buttons
 - 3.3V and 5V Output Rails
 - 40+ Accessible GPIOs
+
+## Pinout
+
+<img
+  src="/tarangify-docs/img/Tarangify-T-CORE-S3-BAT-Pinout.png"
+  alt="Tarangify T-CORE-S3-BAT"
+  width="500"
+/>
+
+<img
+  src="/tarangify-docs/img/Tarangify-T-CORE-S3-BAT-Pinout2.png"
+  alt="Tarangify T-CORE-S3-BAT"
+  width="500"
+/>
+
+## Dimensions
+
+<img
+  src="/tarangify-docs/img/Tarangify-T-CORE-S3-BAT-Dimensions.png"
+  alt="Tarangify T-CORE-S3-24V"
+  width="500"
+/>
 
 ## Why Choose T-CORE-S3-BAT?
 
