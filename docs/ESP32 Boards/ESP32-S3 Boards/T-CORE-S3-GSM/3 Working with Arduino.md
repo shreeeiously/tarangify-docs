@@ -83,6 +83,8 @@ ESP32S3 Dev Module
 5. Select **ESP32S3 Dev Module**.
 6. Select the COM port that appears when the board is connected through USB Type-C.
 
+![T-CORE-S3-GSM Board](/img/24A1.jpg)
+
 The CoreX-S3 GSM does not require a dedicated board definition to get started with Arduino. The generic ESP32-S3 profile can be used as the starting configuration.
 
 ### 2.3 Entering Download Mode

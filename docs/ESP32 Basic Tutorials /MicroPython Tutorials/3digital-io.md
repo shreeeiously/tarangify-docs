@@ -27,7 +27,7 @@ Think of it like a light switch: at any given moment, a pin is in exactly one of
 - **HIGH** — logical "1" / "True". On an ESP32, this means the pin is at roughly 3.3V.
 - **LOW** — logical "0" / "False". On an ESP32, this means the pin is at roughly 0V (tied to GND).
 
-![ESP-IDF](/img/3M1.svg)
+![MicroPython](/img/3M1.svg)
 
 - **Output**: the board sets a pin HIGH or LOW to communicate outward — for example, turning an LED on or off.
 - **Input**: the board reads whether a pin is currently HIGH or LOW — for example, checking whether a button is pressed.
@@ -151,7 +151,7 @@ You'll need:
 
 **Using an external pull-up:** same button wiring, plus a 10kΩ resistor between GPIO8 and 3.3V. Same electrical behavior — high when unpressed, low when pressed — but you control the exact pull-up current. In code, this just needs `Pin(BUTTON_PIN, Pin.IN)` since the pull-up is external.
 
-![ESP-IDF](/img/3M3.svg)
+![MicroPython](/img/3M3.svg)
 
 ### 3.2 Try It in the REPL
 
@@ -219,7 +219,7 @@ This counts on the **rising edge** — the moment the button goes from pressed b
 
 Run this and press the button a few times — you may notice the counter occasionally jumping by 2 or 3 on a single press. That's **button bounce**: a mechanical switch's contacts physically vibrate for a few milliseconds when pressed or released, rapidly connecting and disconnecting several times. Since the loop runs far faster than that bounce settles, it can register several transitions from what felt like one press.
 
-![ESP-IDF](/img/3M4.svg)
+![MicroPython](/img/3M4.svg)
 
 **Example 3 — same thing, with basic debouncing:**
 

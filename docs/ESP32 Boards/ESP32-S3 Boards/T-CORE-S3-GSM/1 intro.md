@@ -9,6 +9,12 @@ sidebar_position: 1
 
 The [Tarangify CoreX-S3 GSM](https://store.thingslinker.com/product/tarangify-corex-s3-gsm-esp32-s3-simcom-a7672x-4g-lte-development-board/) is a powerful IoT and embedded development board based on the **ESP32-S3-N16R8** microcontroller and the **SIMCom A7672X 4G LTE Cat-1 module**.
 
+<img
+  src="/tarangify-docs/img/GSM1.webp"
+  alt="Tarangify T-CORE-S3-GSM"
+  width="500"
+/>
+
 It combines Wi-Fi, Bluetooth Low Energy, 4G LTE cellular connectivity, GNSS positioning, audio support, battery operation, and extensive GPIO expansion in a compact development platform.
 
 The board is designed for applications such as GPS tracking, remote monitoring, industrial automation, smart agriculture, telematics, asset tracking, and cellular IoT devices.
@@ -24,6 +30,23 @@ The board is designed for applications such as GPS tracking, remote monitoring, 
 - 2.4 GHz Wi-Fi
 - Bluetooth Low Energy 5.0
 - Arduino IDE, PlatformIO, and ESP-IDF support
+
+<div
+  style={{
+    backgroundColor: 'white',
+    width: '550px',
+    height: '550px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }}
+>
+  <img
+    src="/tarangify-docs/img/GSM3.webp"
+    alt="Tarangify T-CORE-S3-GSM"
+    width="500"
+  />
+</div>
 
 ### 4G LTE Connectivity
 
@@ -269,6 +292,25 @@ For reliable cellular and GNSS operation, external antennas should be connected.
 | GPIO Header      | 40-pin                 |
 | Board Size       | 40 mm × 64 mm          |
 | Board Version    | V1.0                   |
+
+## Pinout
+
+<div
+  style={{
+    backgroundColor: 'white',
+    width: '550px',
+    height: '550px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }}
+>
+  <img
+    src="/tarangify-docs/img/GSM2.webp"
+    alt="Tarangify T-CORE-S3-GSM"
+    width="500"
+  />
+</div>
 
 ## Applications
 

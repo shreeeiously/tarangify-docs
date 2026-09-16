@@ -42,7 +42,7 @@ The bus needs just:
 - **SCL** — carries the clock signal, driven by the controller
 - **GND** — shared ground, same as any other digital interface
 
-![ESP-IDF](/img/7M1.svg)
+![MicroPython](/img/7M1.svg)
 
 :::info
 
@@ -73,7 +73,7 @@ Before you can talk to a new I2C device, you need to know its address — and pl
 
 You'll need an I2C-capable module (this tutorial uses an SSD1327-based OLED display as the running example) plus, if the module doesn't already include them, two 4.7kΩ pull-up resistors.
 
-![ESP-IDF](/img/7M2.webp)
+![MicroPython](/img/7M2.webp)
 
 | Board pin | Module pin | Note |
 |---|---|---|

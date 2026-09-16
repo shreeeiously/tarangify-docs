@@ -87,7 +87,7 @@ while True:
 
 After running the code, the Shell will display a list of available Wi-Fi networks detected. The output will be similar to:
 
-  ![ESP-IDF](/img/9M1.webp)
+  ![MicroPython](/img/9M1.webp)
 
 :::tip
 
@@ -129,7 +129,7 @@ print("IP config:", wlan.ifconfig())
 
 Update `SSID` and `PASSWORD` to match your actual network, run it, and you should see connection progress dots followed by the assigned IP address once connected.
 
-![ESP-IDF](/img/9M2.webp)
+![MicroPython](/img/9M2.webp)
 
 ---
 
@@ -156,7 +156,7 @@ print("AP started")
 
 Run this and the board broadcasts its own network, printing the AP's IP address (the address other devices will reach it at once connected).
 
-![ESP-IDF](/img/9M3.webp)
+![MicroPython](/img/9M3.webp)
 
 ---
 

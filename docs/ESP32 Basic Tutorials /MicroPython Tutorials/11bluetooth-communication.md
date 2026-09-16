@@ -45,7 +45,7 @@ GAP defines two roles:
 - **Peripheral** — typically the device holding data (a sensor, in most of these examples). It advertises its presence and waits to be connected to. ESP32 plays this role in the first two examples.
 - **Central** — typically the device that initiates connections (a phone, a computer, or in Example 3, another ESP32). It scans for peripherals and connects to the ones it wants.
 
-![ESP-IDF](/img/11M1.svg)
+![MicroPython](/img/11M1.svg)
 
 The interaction flow:
 
@@ -60,7 +60,7 @@ GATT takes over once a connection exists, following a client/server model that m
 - **GATT Server** — holds and serves the data (usually the GAP Peripheral).
 - **GATT Client** — reads and writes that data (usually the GAP Central).
 
-![ESP-IDF](/img/11M2.svg)
+![MicroPython](/img/11M2.svg)
 
 Data is organized hierarchically:
 
@@ -105,7 +105,7 @@ mip.install("aioble")
 
 `mip` installs into the board's `/lib` directory, which Thonny's file view hides by default — enable **Show hidden files** from the file view's right-click menu if you want to see it.
 
-![ESP-IDF](/img/11M3.webp)
+![MicroPython](/img/11M3.webp)
 
 Once installed, `import aioble` works from any script.
 
@@ -115,7 +115,7 @@ Once installed, `import aioble` works from any script.
 
 This configures the ESP32 as a BLE peripheral publishing a potentiometer's live reading through a GATT characteristic. Any BLE debugging app — this tutorial uses **LightBlue** (iOS/Android) — can connect as a central and read or subscribe to that value.
 
-![ESP-IDF](/img/11M4.svg)
+![MicroPython](/img/11M4.svg)
 
 ### 3.1 Wire It Up
 
@@ -211,11 +211,11 @@ This example needs a BLE debugging app on your phone — [LightBlue](https://app
 
 In LightBlue: search for "ESP32," find **ESP32_Potentiometer**, and connect. Open the characteristic that shows read/subscribe support, switch its display format to HEX,
 
-![ESP-IDF](/img/11M5.webp)
+![MicroPython](/img/11M5.webp)
 
  set the byte limit to 2, and choose "2 Byte Unsigned Integer." Tap **Read** for a one-off value, or **Subscribe** to see it update live as you turn the potentiometer.
 
-![ESP-IDF](/img/11M6.webp)
+![MicroPython](/img/11M6.webp)
 
 ---
 
@@ -223,7 +223,7 @@ In LightBlue: search for "ESP32," find **ESP32_Potentiometer**, and connect. Ope
 
 This example configures the ESP32 as a peripheral and creates a writable BLE Characteristic. A smartphone app (like LightBlue) can write specific values (e.g., 0 or 1) to this characteristic to control an LED connected to the ESP32.
 
-![ESP-IDF](/img/11M7.svg)
+![MicroPython](/img/11M7.svg)
 
 ### 4.1 Wire It Up
 
@@ -308,11 +308,11 @@ asyncio.run(main())
 
 In LightBlue: find **ESP32_LED_Control**, connect, and open the characteristic showing read/write support.
 
-![ESP-IDF](/img/11M8.webp)
+![MicroPython](/img/11M8.webp)
 
  Set the byte limit to 1, choose "1 Byte Unsigned Integer." Reading should show `0` (LED off). Tap **Write new value**, enter `1`, and the LED should turn on.
 
-![ESP-IDF](/img/11M9.webp)
+![MicroPython](/img/11M9.webp)
 
 ---
 
@@ -320,7 +320,7 @@ In LightBlue: find **ESP32_LED_Control**, connect, and open the characteristic s
 
 The most involved example: one board reads a potentiometer and acts as a **central**, connecting out to a second board that acts as a **peripheral** and drives an LED's brightness via PWM — no phone in the loop at all.
 
-![ESP-IDF](/img/11M10.svg)
+![MicroPython](/img/11M10.svg)
 
 ### 5.1 Wire It Up
 

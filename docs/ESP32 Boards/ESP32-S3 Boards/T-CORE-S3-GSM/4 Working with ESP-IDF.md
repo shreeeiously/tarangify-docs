@@ -44,6 +44,12 @@ You can then use examples such as `blink` to verify GPIO operation before moving
 
 The **CoreX-S3 GSM** combines the ESP32-S3 with the **SIMCom A7672X** cellular modem.
 
+<img
+  src="/tarangify-docs/img/GSM1.webp"
+  alt="Tarangify T-CORE-S3-GSM"
+  width="500"
+/>
+
 The ESP32-S3 communicates with the modem using a serial interface and can send **AT commands** to control and monitor the cellular connection.
 
 Typical GSM/LTE operations include:

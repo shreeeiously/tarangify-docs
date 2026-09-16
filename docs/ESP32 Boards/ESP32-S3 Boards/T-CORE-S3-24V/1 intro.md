@@ -7,11 +7,23 @@ sidebar_position: 1
 
 The [Tarangify T-CORE-S3-24V](https://store.thingslinker.com/product/tarangify-t-core-s3-24v-esp32-s3-development-board-5v-to-28v-wide-input-sd-card-rgb-led/) is a high-performance ESP32-S3 development board designed for industrial automation, IoT, robotics, smart agriculture, and embedded applications that require reliable operation from a wide range of power sources.
 
+<img
+  src="/tarangify-docs/img/Tarangify-T-CORE-S3-24V1.webp"
+  alt="Tarangify T-CORE-S3-24V"
+  width="500"
+/>
+
 Powered by the **ESP32-S3-N16R8** module, the board combines powerful processing capabilities, wireless connectivity, onboard storage, and industrial-grade power management into a compact and deployment-ready platform.
 
 One of the key advantages of the T-CORE-S3-24V is its **wide input voltage range of 5V to 28V**, allowing it to operate directly from common industrial power supplies such as 12V and 24V systems without requiring external regulators.
 
 ## Key Features
+
+<img
+  src="/tarangify-docs/img/T-CORE-S3-24V5.webp"
+  alt="Tarangify T-CORE-S3-24V"
+  width="900"
+/>
 
 - ESP32-S3-N16R8 Microcontroller
 - Dual-Core Xtensa LX7 Processor
@@ -29,6 +41,28 @@ One of the key advantages of the T-CORE-S3-24V is its **wide input voltage range
 - 3.3V and 5V Output Rails
 - 40+ Accessible GPIOs
 
+## Pinout
+
+<img
+  src="/tarangify-docs/img/Tarangify-T-CORE-S3-24V2.webp"
+  alt="Tarangify T-CORE-S3-24V"
+  width="500"
+/>
+
+<img
+  src="/tarangify-docs/img/Tarangify-T-CORE-S3-24V3.webp"
+  alt="Tarangify T-CORE-S3-24V"
+  width="500"
+/>
+
+## Dimensions 
+
+<img
+  src="/tarangify-docs/img/Tarangify-T-CORE-S3-24V4.webp"
+  alt="Tarangify T-CORE-S3-24V"
+  width="500"
+/>
+
 ## Why Choose T-CORE-S3-24V?
 
 Unlike standard ESP32 development boards that typically require a stable 5V input, the T-CORE-S3-24V can be connected directly to industrial power systems.
@@ -42,6 +76,12 @@ This makes it ideal for:
 - Robotics
 - Data Logging
 - Remote Monitoring Systems
+
+<img
+  src="/tarangify-docs/img/T-CORE-S3-24V6.webp"
+  alt="Tarangify T-CORE-S3-24V"
+  width="900"
+/>
 
 The onboard microSD card slot, RGB status LED, and extensive GPIO access further simplify hardware development and deployment.
 

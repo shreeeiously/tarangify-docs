@@ -46,8 +46,20 @@ If you need to fully erase T-CORE-S3-24V's flash — for example, to clear a stu
 
 1. Download and extract the [ESP Flash Download Tool](https://www.espressif.com/en/support/download/other-tools).
 2. Open the tool, select **ESP32-S3** as the chip and **UART** as the interface.
+
+![T-CORE-S3-24V Board](/img/24M1.webp)
+
 3. Select the correct COM port for your board (connected over Type-C USB), then click **START** — leave the bin-file fields empty, since you're only erasing, not flashing.
-4. Once connected, click **Erase** and wait for it to complete.
+
+![T-CORE-S3-24V Board](/img/24M2.webp)
+
+4. Once connected, click **Erase** 
+
+![T-CORE-S3-24V Board](/img/24M3.webp)
+
+and wait for it to complete.
+
+![T-CORE-S3-24V Board](/img/24M4.webp)
 
 :::tip
 
