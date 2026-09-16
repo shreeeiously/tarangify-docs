@@ -47,4 +47,10 @@ ESP32 boards are commonly used in:
 
 Traditional microcontrollers such as Arduino Uno require external Wi-Fi or Bluetooth modules for wireless communication.
 
-The ESP32 integrates these features directly into the chip, reducing cost, complexity, and power consumption while providing significantly more processing power and memory.
+The ESP32 integrates these features directly into the chip, providing:
+
+* **Reduced Cost**
+* **Lower Hardware Complexity**
+* **Lower Power Consumption**
+* **Higher Processing Power**
+* **More Memory**

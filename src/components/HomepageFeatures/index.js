@@ -63,8 +63,7 @@ export default function HomepageFeatures() {
           <h2>Explore Our IoT Solutions</h2>
 
           <p>
-            Discover development boards, IoT hardware, and solutions
-            designed to help you build, prototype, and deploy faster.
+            Development boards, IoT hardware, and custom engineering services to turn your ideas into real-world solutions.
           </p>
 
           <a

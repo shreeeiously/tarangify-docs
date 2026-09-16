@@ -6,7 +6,8 @@
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
-  background-color: #1992f9;
+  background-color: #1992f9; 
+  color: #FFFF;
   position: relative;
   overflow: hidden;
 }

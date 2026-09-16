@@ -126,6 +126,10 @@ const config = {
                 label: 'Instagram',
                 href: 'https://www.instagram.com/thingslinker',
               },
+              {
+                label: 'Youtube',
+                href: 'https://www.youtube.com/@thingslinker',
+              },
             ],
           },
           {
