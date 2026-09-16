@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ThingsLinker',
-  tagline: 'Engineering Connected Products from Idea to Production',
+  tagline: 'Think. Build. Connect.',
   favicon: 'img/TL.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
