@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ThingsLinker Documentation',
-  tagline: 'IoT Development Boards and Sensors',
-  favicon: 'img/favicon.ico',
+  title: 'ThingsLinker',
+  tagline: 'Engineering Connected Products from Idea to Production',
+  favicon: 'img/TL.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -83,17 +83,17 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Tarangify',
+        title: 'ThingsLinker',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/TL.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tarangify',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -110,7 +110,7 @@ const config = {
             title: 'Docs',
             items: [
                 {
-                label: 'Tutorial',
+                label: 'Tarangify',
                 to: '/docs/category/esp32-basic-tutorials',
                 },
             ],
@@ -119,16 +119,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://in.linkedin.com/company/thingslinker',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Instagram',
+                href: 'https://www.instagram.com/thingslinker',
               },
             ],
           },
@@ -139,10 +135,7 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+            
             ],
           },
         ],

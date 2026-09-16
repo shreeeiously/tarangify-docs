@@ -4,43 +4,40 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'End-to-End IoT Engineering',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        From electronics and PCB design to firmware, cloud platforms, and
+        mobile applications, we bring the complete product stack together.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Built for Real-World Deployment',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        We don't stop at prototypes. Our products are designed, tested,
+        manufactured, and supported for real-world applications.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Hardware + Software, Together',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Our hardware and software teams work together throughout development,
+        reducing integration problems and accelerating the path from concept
+        to production.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
+      <div className={styles.featureSpace}></div>
+
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
@@ -53,12 +50,35 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+
+        {/* Feature Cards */}
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
+
+        {/* IoT Store Section */}
+        <div className={styles.storeSection}>
+          <h2>Explore Our IoT Solutions</h2>
+
+          <p>
+            Discover development boards, IoT hardware, and solutions
+            designed to help you build, prototype, and deploy faster.
+          </p>
+
+          <a
+            href="https://store.thingslinker.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.storeButton}
+          >
+            ThingsLinker Store
+          </a>
+        </div>
+
       </div>
     </section>
   );
 }
+
