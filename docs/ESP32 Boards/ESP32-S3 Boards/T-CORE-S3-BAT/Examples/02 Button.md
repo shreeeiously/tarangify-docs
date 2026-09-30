@@ -32,6 +32,8 @@ By completing this example, you will learn how to:
 | ESP32-S3 Development Board | T-CORE-S3-BAT |
 | User Button | Connected to GPIO 41 |
 
+![T-CORE-S3-BAT Board](/img/BBUTTON.png)
+
 ---
 
 ## How the Button Works

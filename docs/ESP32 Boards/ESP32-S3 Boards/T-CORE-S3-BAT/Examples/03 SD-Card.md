@@ -34,6 +34,9 @@ By completing this example, you will learn how to:
 | MicroSD Card | FAT32 formatted |
 | Onboard SD Card Slot | SPI Interface |
 
+
+![T-CORE-S3-BAT Board](/img/BSDCARD.png)
+
 ---
 
 ## SD Card SPI Connections

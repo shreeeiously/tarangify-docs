@@ -36,6 +36,9 @@ By completing this example, you will learn how to:
 | Battery Input | Connected through onboard voltage divider |
 | ADC Pin | GPIO 3 |
 
+
+![T-CORE-S3-BAT Board](/img/BBATTERY.png)
+
 ---
 
 ## Battery Measurement Details

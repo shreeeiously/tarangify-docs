@@ -44,18 +44,14 @@ sidebar_position: 2
 
 - [SD Card Example](./Examples/03%20SD-Card)
 
-### 4. Battery
+### 4. OLED Display
 
-- [Battery Monitoring Example](./Examples/04%20Battery)
+- [OLED Display Example](./Examples/04%20OLED-Display)
 
-### 5. OLED Display
+### 5. SHT35 Temperature Sensor
 
-- [OLED Display Example](./Examples/05%20OLED-Display)
+- [SHT35 Temperature & Humidity Sensor Example](./Examples/05%20Temperature-Sensor)
 
-### 6. SHT35 Temperature Sensor
+### 6. Servo Motor
 
-- [SHT35 Temperature & Humidity Sensor Example](./Examples/06%20Temperature-Sensor)
-
-### 7. Servo Motor
-
-- [Servo Motor Example](./Examples/07%20Servo-Motor)
+- [Servo Motor Example](./Examples/06%20Servo-Motor)

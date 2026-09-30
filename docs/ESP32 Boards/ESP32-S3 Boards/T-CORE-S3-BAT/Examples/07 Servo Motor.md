@@ -40,6 +40,12 @@ By completing this example, you will learn how to:
 | Servo Motor | Standard 180° Servo |
 | Control Pin | GPIO 3 |
 
+  <img
+    src="/tarangify-docs/img/SERVO.webp"
+    alt="SERVO"
+    width="450"
+  />
+  
 ---
 
 ## Servo Connections

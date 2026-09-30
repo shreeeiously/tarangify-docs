@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
-# 5. OLED Display 
+# 4. OLED Display 
 
 ## Introduction
 
@@ -33,6 +33,12 @@ By completing this example, you will learn how to:
 | ESP32-S3 Development Board | T-CORE-S3-24V |
 | OLED Display | 0.91-inch SSD1306 OLED |
 | Communication Interface | I2C |
+
+  <img
+    src="/tarangify-docs/img/OLED.webp"
+    alt="OLED Display"
+    width="450"
+  />
 
 ---
 

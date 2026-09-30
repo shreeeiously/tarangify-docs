@@ -1,8 +1,8 @@
 ---
-sidebar_position: 9
+sidebar_position: 8
 ---
 
-# 7. Servo Motor
+# 6. Servo Motor
 
 ## Introduction
 
@@ -39,6 +39,12 @@ By completing this example, you will learn how to:
 | ESP32-S3 Development Board | T-CORE-S3-24V |
 | Servo Motor | Standard 180° Servo |
 | Control Pin | GPIO 3 |
+
+  <img
+    src="/tarangify-docs/img/SERVO.webp"
+    alt="SERVO"
+    width="450"
+  />
 
 ---
 

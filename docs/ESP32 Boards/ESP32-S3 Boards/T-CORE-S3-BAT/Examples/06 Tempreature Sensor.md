@@ -36,6 +36,11 @@ By completing this example, you will learn how to:
 | SHT35 Sensor | Temperature & Humidity Sensor |
 | Communication Interface | I2C |
 
+  <img
+    src="/tarangify-docs/img/SHT35.webp"
+    alt="SHT35"
+    width="450"
+  />
 ---
 
 ## Sensor Connections

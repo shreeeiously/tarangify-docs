@@ -37,6 +37,8 @@ By completing this example, you will learn how to:
 | ESP32-S3 Development Board | T-CORE-S3-24V |
 | Onboard RGB LED | WS2812 RGB LED connected to GPIO 48 |
 
+![T-CORE-S3-24V Board](/img/RGB.png)
+
 ---
 
 ## Required Library

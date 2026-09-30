@@ -34,6 +34,12 @@ By completing this example, you will learn how to:
 | OLED Display | 0.91-inch SSD1306 OLED |
 | Communication Interface | I2C |
 
+  <img
+    src="/tarangify-docs/img/OLED.webp"
+    alt="OLED Display"
+    width="450"
+  />
+  
 ---
 
 ## OLED Connections

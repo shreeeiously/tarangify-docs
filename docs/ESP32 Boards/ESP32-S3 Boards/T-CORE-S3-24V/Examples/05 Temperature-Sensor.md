@@ -1,8 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 7
 ---
 
-# 6. SHT35 Temperature & Humidity Sensor 
+# 5. SHT35 Temperature & Humidity Sensor 
 
 ## Introduction
 
@@ -35,6 +35,12 @@ By completing this example, you will learn how to:
 | ESP32-S3 Development Board | T-CORE-S3-24V |
 | SHT35 Sensor | Temperature & Humidity Sensor |
 | Communication Interface | I2C |
+
+  <img
+    src="/tarangify-docs/img/SHT35.webp"
+    alt="SHT35"
+    width="450"
+  />
 
 ---
 

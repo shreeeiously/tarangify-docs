@@ -37,6 +37,8 @@ By completing this example, you will learn how to:
 | ESP32-S3 Development Board | T-CORE-S3-BAT |
 | Onboard RGB LED | WS2812 RGB LED connected to GPIO 48 |
 
+![T-CORE-S3-BAT Board](/img/BRGB.png)
+
 ---
 
 ## Required Library
