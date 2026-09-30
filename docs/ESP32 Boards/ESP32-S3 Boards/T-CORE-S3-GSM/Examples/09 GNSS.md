@@ -46,6 +46,12 @@ By completing this example, you will learn how to:
 | GNSS Antenna | Connected to GNSS connector |
 | USB Type-C Cable | Programming and power |
 
+ <img
+    src="/tarangify-docs/img/GSMGNSS.png"
+    alt="GSM GNSS"
+    width="450"
+  />
+
 ---
 
 ## GNSS Antenna

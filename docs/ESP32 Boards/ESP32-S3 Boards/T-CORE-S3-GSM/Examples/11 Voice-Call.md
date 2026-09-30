@@ -48,6 +48,11 @@ By completing this example, you will learn how to:
 | Microphone | Onboard microphone |
 | USB Type-C Cable | Programming and power |
 
+ <img
+    src="/tarangify-docs/img/GSMVOICECALL.png"
+    alt="GSM Voice-Call"
+    width="450"
+  />
 ---
 
 ## Voice Call Requirements

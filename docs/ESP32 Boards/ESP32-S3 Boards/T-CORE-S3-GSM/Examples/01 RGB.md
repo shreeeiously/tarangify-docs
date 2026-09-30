@@ -37,6 +37,11 @@ By completing this example, you will learn how to:
 | ESP32-S3 Development Board | T-CORE-S3-GSM |
 | Onboard RGB LED | WS2812 RGB LED connected to GPIO 48 |
 
+ <img
+    src="/tarangify-docs/img/GSMRGB.png"
+    alt="GSM RGB"
+    width="450"
+  />
 ---
 
 ## Required Library

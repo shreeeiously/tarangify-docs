@@ -32,6 +32,12 @@ By completing this example, you will learn how to:
 | ESP32-S3 Development Board | T-CORE-S3-GSM |
 | User Button | Connected to GPIO 41 |
 
+ <img
+    src="/tarangify-docs/img/GSMBUTTON.png"
+    alt="GSM BUTTON"
+    width="450"
+  />
+
 ---
 
 ## How the Button Works

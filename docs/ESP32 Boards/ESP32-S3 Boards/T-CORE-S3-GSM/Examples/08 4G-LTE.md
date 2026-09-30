@@ -40,6 +40,11 @@ By completing this example, you will learn how to:
 | LTE Antenna | Connected to LTE antenna connector |
 | USB Type-C Cable | Programming and power |
 
+ <img
+    src="/tarangify-docs/img/GSM4GLTG.png"
+    alt="GSM 4G-LTG"
+    width="450"
+  />
 ---
 
 ## LTE Module

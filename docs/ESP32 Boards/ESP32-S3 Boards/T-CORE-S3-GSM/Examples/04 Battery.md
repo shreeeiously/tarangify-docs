@@ -36,6 +36,12 @@ By completing this example, you will learn how to:
 | Battery Input | Connected through onboard voltage divider |
 | ADC Pin | GPIO 3 |
 
+ <img
+    src="/tarangify-docs/img/GSMBATTERY.png"
+    alt="GSM BATTERY"
+    width="450"
+  />
+
 ---
 
 ## Battery Measurement Details

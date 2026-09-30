@@ -45,6 +45,12 @@ By completing this example, you will learn how to:
 | LTE Antenna | Connected to LTE antenna connector |
 | USB Type-C Cable | Programming and power |
 
+ <img
+    src="/tarangify-docs/img/GSMSMS.png"
+    alt="GSM SMS"
+    width="450"
+  />
+  
 ---
 
 ## SIM Card Requirements

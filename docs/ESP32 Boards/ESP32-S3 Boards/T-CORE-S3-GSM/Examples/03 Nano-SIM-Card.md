@@ -44,6 +44,12 @@ By completing this example, you will learn how to:
 | LTE Antenna | Connected to the LTE antenna connector |
 | USB Type-C Cable | Programming and power |
 
+ <img
+    src="/tarangify-docs/img/GSMNanoSIM.png"
+    alt="GSM NanoSIM"
+    width="450"
+  />
+
 ---
 
 ## Nano SIM Slot
