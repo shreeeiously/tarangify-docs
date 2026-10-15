@@ -19,8 +19,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://thingslinker.com">
-            Visit Our Website 
+            to="https://store.thingslinker.com">
+            ThingsLinker Store
           </Link>
         </div>
       </div>

@@ -4,7 +4,7 @@ ESP32 is a series of System-on-Chip (SoC) developed by Espressif Systems. These 
 
 Espressif continues to release various ESP32 chips, forming a complete product line. Although different models vary in processor cores, specific functions, and pin configurations, they can all be developed using Espressif's unified Software Development Kit (SDK). This ensures good code compatibility and a consistent development experience.
 
-![ESP-32](/img/ESP321.webp)
+![ESP-32](/img/ESP32.png)
 
 ---
 

@@ -67,12 +67,12 @@ export default function HomepageFeatures() {
           </p>
 
           <a
-            href="https://store.thingslinker.com"
+            href="https://thingslinker.com"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.storeButton}
           >
-            ThingsLinker Store
+            Visit Our Website 
           </a>
         </div>
 

@@ -4,15 +4,7 @@ sidebar_position: 2
 ---
 # Resources
 
-## 1. Hardware Resources
-
-### Development Board Design File
-
-- [Structure and Dimensions]()
-
---- 
-
-## 2. Technical Manuals
+## Technical Manuals
 
 ### Official Documentation
 
@@ -22,7 +14,7 @@ sidebar_position: 2
 
 ---
 
-## 3. Examples
+## Examples
 
 ### 1. RGB
 

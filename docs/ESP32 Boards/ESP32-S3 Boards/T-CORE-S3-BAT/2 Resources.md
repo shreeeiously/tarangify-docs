@@ -4,14 +4,7 @@ sidebar_position: 2
 ---
 # Resources
 
-## 1. Hardware Resources
-
-### Development Board Design File
-
-- [Structure and Dimensions](https://store.thingslinker.com/product/tarangify-t-core-s3-24v-esp32-s3-development-board-5v-to-28v-wide-input-sd-card-rgb-led/)
----
-
-## 2. Technical Manuals
+## Technical Manuals
 
 ### Official Documentation
 
@@ -20,7 +13,7 @@ sidebar_position: 2
 - [ESP32-S3-WROOM-1 Datasheet](https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
 ---
 
-## 3. Examples
+## Examples
 
 ### 1. RGB
 
